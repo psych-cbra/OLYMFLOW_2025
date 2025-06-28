@@ -1,9 +1,22 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 17
-VisualStudioVersion = 17.11.35312.102
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.36128.20
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "OLYMFLOW_2025", "OLYMFLOW_2025.vbproj", "{4C6CAF72-6AF7-4254-A0A9-4D9D4F1BF404}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CAPA_DATOS", "CAPA_DATOS", "{B80E8545-1FAB-4D8D-8676-4FB7BF2027AF}"
+	ProjectSection(SolutionItems) = preProject
+		BASE_DE_DATOS.vb = BASE_DE_DATOS.vb
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ASSETS", "ASSETS", "{AC28EAAC-9F42-4410-AA4C-F3AC33718526}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AUDIO", "AUDIO", "{ACDD8868-C130-4FF2-A77C-0A2C6A6EDBE2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "IMAGES", "IMAGES", "{BCAB59E1-BF73-4715-8F36-20C4C4B2071A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "VIDEO", "VIDEO", "{0FB34CE2-66BB-4066-84DF-8155BC008173}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -18,6 +31,11 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{ACDD8868-C130-4FF2-A77C-0A2C6A6EDBE2} = {AC28EAAC-9F42-4410-AA4C-F3AC33718526}
+		{BCAB59E1-BF73-4715-8F36-20C4C4B2071A} = {AC28EAAC-9F42-4410-AA4C-F3AC33718526}
+		{0FB34CE2-66BB-4066-84DF-8155BC008173} = {AC28EAAC-9F42-4410-AA4C-F3AC33718526}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {07257B50-FECB-49BD-B6B7-BD0BBB72BF73}
