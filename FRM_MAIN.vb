@@ -51,15 +51,6 @@ Public Class FRM_MAIN
     Private Sub PasteToolStripMenuItem_Click(ByVal sender As Object, ByVal e As EventArgs)
         'Utilice My.Computer.Clipboard.GetText() o My.Computer.Clipboard.GetData para recuperar la información del Portapapeles.
     End Sub
-
-    Private Sub ToolBarToolStripMenuItem_Click(ByVal sender As Object, ByVal e As EventArgs)
-        Me.ToolStrip.Visible = Me.ToolBarToolStripMenuItem.Checked
-    End Sub
-
-    Private Sub StatusBarToolStripMenuItem_Click(ByVal sender As Object, ByVal e As EventArgs)
-        Me.StatusStrip.Visible = Me.StatusBarToolStripMenuItem.Checked
-    End Sub
-
     Private Sub CascadeToolStripMenuItem_Click(ByVal sender As Object, ByVal e As EventArgs)
         Me.LayoutMdi(MdiLayout.Cascade)
     End Sub
@@ -85,4 +76,15 @@ Public Class FRM_MAIN
 
     Private m_ChildFormNumber As Integer
 
+    Private Sub FRM_MAIN_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+    End Sub
+
+    Private Sub IniciarSesiónToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles IniciarSesiónToolStripMenuItem.Click
+        Form1.Show()
+    End Sub
+
+    Private Sub ExitToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ExitToolStripMenuItem.Click
+        End
+    End Sub
 End Class

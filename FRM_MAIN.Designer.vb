@@ -26,11 +26,11 @@ Partial Class FRM_MAIN
         Me.components = New System.ComponentModel.Container()
         Me.MenuStrip = New System.Windows.Forms.MenuStrip()
         Me.FileMenu = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ToolStrip = New System.Windows.Forms.ToolStrip()
-        Me.ToolTip = New System.Windows.Forms.ToolTip(Me.components)
-        Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.IniciarSesiónToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.CrearUsuarioToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ToolStrip = New System.Windows.Forms.ToolStrip()
+        Me.ToolTip = New System.Windows.Forms.ToolTip(Me.components)
         Me.MenuStrip.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -51,20 +51,6 @@ Partial Class FRM_MAIN
         Me.FileMenu.Size = New System.Drawing.Size(48, 20)
         Me.FileMenu.Text = "&Inicio"
         '
-        'ToolStrip
-        '
-        Me.ToolStrip.Location = New System.Drawing.Point(0, 24)
-        Me.ToolStrip.Name = "ToolStrip"
-        Me.ToolStrip.Size = New System.Drawing.Size(1430, 25)
-        Me.ToolStrip.TabIndex = 6
-        Me.ToolStrip.Text = "ToolStrip"
-        '
-        'ExitToolStripMenuItem
-        '
-        Me.ExitToolStripMenuItem.Name = "ExitToolStripMenuItem"
-        Me.ExitToolStripMenuItem.Size = New System.Drawing.Size(41, 20)
-        Me.ExitToolStripMenuItem.Text = "&Salir"
-        '
         'IniciarSesiónToolStripMenuItem
         '
         Me.IniciarSesiónToolStripMenuItem.Name = "IniciarSesiónToolStripMenuItem"
@@ -76,6 +62,20 @@ Partial Class FRM_MAIN
         Me.CrearUsuarioToolStripMenuItem.Name = "CrearUsuarioToolStripMenuItem"
         Me.CrearUsuarioToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.CrearUsuarioToolStripMenuItem.Text = "Crear Usuario"
+        '
+        'ExitToolStripMenuItem
+        '
+        Me.ExitToolStripMenuItem.Name = "ExitToolStripMenuItem"
+        Me.ExitToolStripMenuItem.Size = New System.Drawing.Size(41, 20)
+        Me.ExitToolStripMenuItem.Text = "&Salir"
+        '
+        'ToolStrip
+        '
+        Me.ToolStrip.Location = New System.Drawing.Point(0, 24)
+        Me.ToolStrip.Name = "ToolStrip"
+        Me.ToolStrip.Size = New System.Drawing.Size(1430, 25)
+        Me.ToolStrip.TabIndex = 6
+        Me.ToolStrip.Text = "ToolStrip"
         '
         'FRM_MAIN
         '
