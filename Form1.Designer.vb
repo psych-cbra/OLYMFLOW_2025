@@ -48,7 +48,7 @@ Partial Class Form1
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(915, 70)
         Me.Label3.TabIndex = 5
-        Me.Label3.Text = "Configuración de Usuario"
+        Me.Label3.Text = "Creación de Usuario"
         Me.Label3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
         'Label1

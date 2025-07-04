@@ -86,10 +86,22 @@
       <DependentUpon>Form1.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="FRM_IDENTIFICACION_USUARIOS.Designer.vb">
+      <DependentUpon>FRM_IDENTIFICACION_USUARIOS.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_IDENTIFICACION_USUARIOS.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="FRM_MAIN.Designer.vb">
       <DependentUpon>FRM_MAIN.vb</DependentUpon>
     </Compile>
     <Compile Include="FRM_MAIN.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_QUESTION.Designer.vb">
+      <DependentUpon>FRM_QUESTION.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_QUESTION.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
@@ -113,8 +125,14 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FRM_IDENTIFICACION_USUARIOS.resx">
+      <DependentUpon>FRM_IDENTIFICACION_USUARIOS.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FRM_MAIN.resx">
       <DependentUpon>FRM_MAIN.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_QUESTION.resx">
+      <DependentUpon>FRM_QUESTION.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
