@@ -42,11 +42,12 @@ Partial Class Form1
         'Label3
         '
         Me.Label3.BackColor = System.Drawing.Color.CornflowerBlue
-        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.Font = New System.Drawing.Font("OCR A Extended", 21.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.ForeColor = System.Drawing.Color.White
+        Me.Label3.Image = CType(resources.GetObject("Label3.Image"), System.Drawing.Image)
         Me.Label3.Location = New System.Drawing.Point(-1, -1)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(915, 70)
+        Me.Label3.Size = New System.Drawing.Size(915, 76)
         Me.Label3.TabIndex = 5
         Me.Label3.Text = "Creación de Usuario"
         Me.Label3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -77,7 +78,7 @@ Partial Class Form1
         Me.TXT_NOMBRE.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.TXT_NOMBRE.Location = New System.Drawing.Point(40, 158)
         Me.TXT_NOMBRE.Margin = New System.Windows.Forms.Padding(5, 6, 5, 6)
-        Me.TXT_NOMBRE.MaxLength = 20
+        Me.TXT_NOMBRE.MaxLength = 100
         Me.TXT_NOMBRE.Name = "TXT_NOMBRE"
         Me.TXT_NOMBRE.PlaceholderText = "Digite su nombre"
         Me.TXT_NOMBRE.SelectedText = ""
@@ -110,7 +111,7 @@ Partial Class Form1
         Me.TXT_CLAVE.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.TXT_CLAVE.Location = New System.Drawing.Point(40, 405)
         Me.TXT_CLAVE.Margin = New System.Windows.Forms.Padding(5, 6, 5, 6)
-        Me.TXT_CLAVE.MaxLength = 20
+        Me.TXT_CLAVE.MaxLength = 16
         Me.TXT_CLAVE.Name = "TXT_CLAVE"
         Me.TXT_CLAVE.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
         Me.TXT_CLAVE.PlaceholderText = "Digite su clave"
@@ -144,7 +145,7 @@ Partial Class Form1
         Me.TXT_CORREO.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.TXT_CORREO.Location = New System.Drawing.Point(40, 291)
         Me.TXT_CORREO.Margin = New System.Windows.Forms.Padding(5, 6, 5, 6)
-        Me.TXT_CORREO.MaxLength = 20
+        Me.TXT_CORREO.MaxLength = 80
         Me.TXT_CORREO.Name = "TXT_CORREO"
         Me.TXT_CORREO.PlaceholderText = "Digite su Correo"
         Me.TXT_CORREO.SelectedText = ""

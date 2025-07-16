@@ -92,6 +92,12 @@
     <Compile Include="FRM_IDENTIFICACION_USUARIOS.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="FRM_LOGIN.Designer.vb">
+      <DependentUpon>FRM_LOGIN.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_LOGIN.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="FRM_MAIN.Designer.vb">
       <DependentUpon>FRM_MAIN.vb</DependentUpon>
     </Compile>
@@ -128,6 +134,9 @@
     <EmbeddedResource Include="FRM_IDENTIFICACION_USUARIOS.resx">
       <DependentUpon>FRM_IDENTIFICACION_USUARIOS.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FRM_LOGIN.resx">
+      <DependentUpon>FRM_LOGIN.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FRM_MAIN.resx">
       <DependentUpon>FRM_MAIN.vb</DependentUpon>
     </EmbeddedResource>
@@ -153,6 +162,9 @@
     </None>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="IN_GAME_FORMS\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

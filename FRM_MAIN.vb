@@ -81,10 +81,14 @@ Public Class FRM_MAIN
     End Sub
 
     Private Sub IniciarSesiónToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles IniciarSesiónToolStripMenuItem.Click
-        Form1.Show()
+        FRM_LOGIN.Show()
     End Sub
 
     Private Sub ExitToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ExitToolStripMenuItem.Click
         End
+    End Sub
+
+    Private Sub CrearUsuarioToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles CrearUsuarioToolStripMenuItem.Click
+        Form1.Show()
     End Sub
 End Class
