@@ -99,7 +99,6 @@ Partial Class Form1
         'TXT_CLAVE
         '
         Me.TXT_CLAVE.BorderRadius = 20
-        Me.TXT_CLAVE.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.TXT_CLAVE.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.TXT_CLAVE.DefaultText = ""
         Me.TXT_CLAVE.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
@@ -133,7 +132,6 @@ Partial Class Form1
         'TXT_CORREO
         '
         Me.TXT_CORREO.BorderRadius = 20
-        Me.TXT_CORREO.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.TXT_CORREO.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.TXT_CORREO.DefaultText = ""
         Me.TXT_CORREO.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
@@ -154,12 +152,13 @@ Partial Class Form1
         '
         'PROFILE_PICTURE
         '
+        Me.PROFILE_PICTURE.Image = Global.OLYMFLOW_2025.My.Resources.Resources.Cardboard_Man__1_
         Me.PROFILE_PICTURE.ImageRotate = 0!
         Me.PROFILE_PICTURE.Location = New System.Drawing.Point(428, 110)
         Me.PROFILE_PICTURE.Name = "PROFILE_PICTURE"
         Me.PROFILE_PICTURE.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle
         Me.PROFILE_PICTURE.Size = New System.Drawing.Size(385, 272)
-        Me.PROFILE_PICTURE.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PROFILE_PICTURE.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PROFILE_PICTURE.TabIndex = 12
         Me.PROFILE_PICTURE.TabStop = False
         '
@@ -206,14 +205,14 @@ Partial Class Form1
         Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label5.Location = New System.Drawing.Point(353, 385)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(127, 23)
+        Me.Label5.Size = New System.Drawing.Size(177, 23)
         Me.Label5.TabIndex = 16
-        Me.Label5.Text = "Rol de Usuario"
+        Me.Label5.Text = "Tipo de Usuario"
         '
         'ROLES
         '
         Me.ROLES.BackColor = System.Drawing.Color.Transparent
-        Me.ROLES.BorderRadius = 15
+        Me.ROLES.BorderRadius = 20
         Me.ROLES.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed
         Me.ROLES.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.ROLES.FocusedColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
@@ -221,18 +220,20 @@ Partial Class Form1
         Me.ROLES.Font = New System.Drawing.Font("Segoe UI", 10.0!)
         Me.ROLES.ForeColor = System.Drawing.Color.FromArgb(CType(CType(68, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(112, Byte), Integer))
         Me.ROLES.ItemHeight = 30
+        Me.ROLES.Items.AddRange(New Object() {"ALAJUELA", "HEREDIA", "CARTAGO", "SAN JOSE", "GUANACASTE", "PUNTARENAS", "LIMON"})
         Me.ROLES.Location = New System.Drawing.Point(357, 411)
+        Me.ROLES.Margin = New System.Windows.Forms.Padding(2)
         Me.ROLES.Name = "ROLES"
-        Me.ROLES.Size = New System.Drawing.Size(255, 36)
-        Me.ROLES.TabIndex = 15
+        Me.ROLES.Size = New System.Drawing.Size(216, 36)
+        Me.ROLES.TabIndex = 17
         '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(914, 632)
-        Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.ROLES)
+        Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.BT_SALIR)
         Me.Controls.Add(Me.BT_GUARDAR)
         Me.Controls.Add(Me.PROFILE_PICTURE)

@@ -1,0 +1,3 @@
+﻿Public Class FRM_INICIO_VERIFICAR_ROL
+
+End Class

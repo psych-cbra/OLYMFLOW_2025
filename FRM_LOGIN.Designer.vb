@@ -28,6 +28,8 @@ Partial Class FRM_LOGIN
         Me.Label4 = New System.Windows.Forms.Label()
         Me.TXT_CLAVE = New Guna.UI2.WinForms.Guna2TextBox()
         Me.Label2 = New System.Windows.Forms.Label()
+        Me.GBT_INI_SESION = New Guna.UI2.WinForms.Guna2Button()
+        Me.GBT_CERRAR = New Guna.UI2.WinForms.Guna2Button()
         Me.SuspendLayout()
         '
         'Label3
@@ -40,13 +42,12 @@ Partial Class FRM_LOGIN
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(1022, 76)
         Me.Label3.TabIndex = 6
-        Me.Label3.Text = "Creación de Usuario"
+        Me.Label3.Text = "Inicio de Sesión"
         Me.Label3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
         'TXT_CORREO
         '
         Me.TXT_CORREO.BorderRadius = 20
-        Me.TXT_CORREO.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.TXT_CORREO.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.TXT_CORREO.DefaultText = ""
         Me.TXT_CORREO.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
@@ -70,7 +71,7 @@ Partial Class FRM_LOGIN
         Me.Label4.AutoSize = True
         Me.Label4.BackColor = System.Drawing.Color.Transparent
         Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(377, 190)
+        Me.Label4.Location = New System.Drawing.Point(388, 202)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(204, 25)
         Me.Label4.TabIndex = 13
@@ -79,7 +80,6 @@ Partial Class FRM_LOGIN
         'TXT_CLAVE
         '
         Me.TXT_CLAVE.BorderRadius = 20
-        Me.TXT_CLAVE.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.TXT_CLAVE.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.TXT_CLAVE.DefaultText = ""
         Me.TXT_CLAVE.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
@@ -104,17 +104,49 @@ Partial Class FRM_LOGIN
         Me.Label2.AutoSize = True
         Me.Label2.BackColor = System.Drawing.Color.Transparent
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(377, 281)
+        Me.Label2.Location = New System.Drawing.Point(388, 281)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(193, 25)
         Me.Label2.TabIndex = 14
         Me.Label2.Text = "Clave de Usuario"
+        '
+        'GBT_INI_SESION
+        '
+        Me.GBT_INI_SESION.BorderRadius = 15
+        Me.GBT_INI_SESION.DisabledState.BorderColor = System.Drawing.Color.DarkGray
+        Me.GBT_INI_SESION.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
+        Me.GBT_INI_SESION.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.GBT_INI_SESION.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
+        Me.GBT_INI_SESION.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.GBT_INI_SESION.ForeColor = System.Drawing.Color.White
+        Me.GBT_INI_SESION.Location = New System.Drawing.Point(248, 462)
+        Me.GBT_INI_SESION.Name = "GBT_INI_SESION"
+        Me.GBT_INI_SESION.Size = New System.Drawing.Size(235, 68)
+        Me.GBT_INI_SESION.TabIndex = 16
+        Me.GBT_INI_SESION.Text = "Iniciar Sesión"
+        '
+        'GBT_CERRAR
+        '
+        Me.GBT_CERRAR.BorderRadius = 15
+        Me.GBT_CERRAR.DisabledState.BorderColor = System.Drawing.Color.DarkGray
+        Me.GBT_CERRAR.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
+        Me.GBT_CERRAR.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.GBT_CERRAR.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
+        Me.GBT_CERRAR.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.GBT_CERRAR.ForeColor = System.Drawing.Color.White
+        Me.GBT_CERRAR.Location = New System.Drawing.Point(511, 462)
+        Me.GBT_CERRAR.Name = "GBT_CERRAR"
+        Me.GBT_CERRAR.Size = New System.Drawing.Size(235, 68)
+        Me.GBT_CERRAR.TabIndex = 17
+        Me.GBT_CERRAR.Text = "Cerrar"
         '
         'FRM_LOGIN
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1020, 610)
+        Me.Controls.Add(Me.GBT_CERRAR)
+        Me.Controls.Add(Me.GBT_INI_SESION)
         Me.Controls.Add(Me.TXT_CLAVE)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label4)
@@ -134,4 +166,6 @@ Partial Class FRM_LOGIN
     Friend WithEvents Label4 As Label
     Friend WithEvents TXT_CLAVE As Guna.UI2.WinForms.Guna2TextBox
     Friend WithEvents Label2 As Label
+    Friend WithEvents GBT_INI_SESION As Guna.UI2.WinForms.Guna2Button
+    Friend WithEvents GBT_CERRAR As Guna.UI2.WinForms.Guna2Button
 End Class
