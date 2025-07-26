@@ -56,7 +56,11 @@
     End Sub
 
     Private Sub TXT_CORREO_TextChanged(sender As Object, e As EventArgs) Handles TXT_CORREO.TextChanged
-        ACTIVAR()
+        If TXT_CORREO.Text.Contains("@") And TXT_CORREO.Text.Contains(".") Then
+            ACTIVAR()
+        Else
+            MsgBox("No ha ingresado un correo válido. Favor de verificar que este sea correcto", vbOKOnly, "Correo no válido")
+        End If
     End Sub
 
     Private Sub TXT_CLAVE_TextChanged(sender As Object, e As EventArgs) Handles TXT_CLAVE.TextChanged

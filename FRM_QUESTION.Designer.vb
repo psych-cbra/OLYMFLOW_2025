@@ -28,7 +28,7 @@ Partial Class FRM_QUESTION
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1354, 659)
+        Me.ClientSize = New System.Drawing.Size(1323, 712)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "FRM_QUESTION"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
