@@ -3,4 +3,5 @@
     Public USER_CORREO As String
     Public USER_CLAVE As String
     Public USER_ROLE As Integer
+    Public USER_PFP As Byte()
 End Module

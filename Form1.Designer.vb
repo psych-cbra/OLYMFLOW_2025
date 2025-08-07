@@ -41,30 +41,31 @@ Partial Class Form1
         '
         'Label3
         '
-        Me.Label3.BackColor = System.Drawing.Color.CornflowerBlue
+        Me.Label3.BackColor = System.Drawing.Color.Transparent
         Me.Label3.Font = New System.Drawing.Font("OCR A Extended", 21.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.ForeColor = System.Drawing.Color.White
-        Me.Label3.Image = CType(resources.GetObject("Label3.Image"), System.Drawing.Image)
-        Me.Label3.Location = New System.Drawing.Point(-1, -1)
+        Me.Label3.Location = New System.Drawing.Point(-2, 21)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(915, 76)
         Me.Label3.TabIndex = 5
         Me.Label3.Text = "Creación de Usuario"
-        Me.Label3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.Label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Label1
         '
         Me.Label1.AutoSize = True
         Me.Label1.BackColor = System.Drawing.Color.Transparent
-        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Font = New System.Drawing.Font("OCR A Extended", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.ForeColor = System.Drawing.SystemColors.ButtonFace
         Me.Label1.Location = New System.Drawing.Point(35, 115)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(214, 25)
+        Me.Label1.Size = New System.Drawing.Size(248, 23)
         Me.Label1.TabIndex = 6
         Me.Label1.Text = "Nombre de Usuario"
         '
         'TXT_NOMBRE
         '
+        Me.TXT_NOMBRE.BackColor = System.Drawing.Color.Transparent
         Me.TXT_NOMBRE.BorderRadius = 20
         Me.TXT_NOMBRE.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.TXT_NOMBRE.Cursor = System.Windows.Forms.Cursors.IBeam
@@ -74,7 +75,7 @@ Partial Class Form1
         Me.TXT_NOMBRE.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
         Me.TXT_NOMBRE.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
         Me.TXT_NOMBRE.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.TXT_NOMBRE.Font = New System.Drawing.Font("Segoe UI", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TXT_NOMBRE.Font = New System.Drawing.Font("OCR A Extended", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TXT_NOMBRE.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.TXT_NOMBRE.Location = New System.Drawing.Point(40, 158)
         Me.TXT_NOMBRE.Margin = New System.Windows.Forms.Padding(5, 6, 5, 6)
@@ -89,15 +90,17 @@ Partial Class Form1
         '
         Me.Label2.AutoSize = True
         Me.Label2.BackColor = System.Drawing.Color.Transparent
-        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.Font = New System.Drawing.Font("OCR A Extended", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.ForeColor = System.Drawing.SystemColors.ButtonFace
         Me.Label2.Location = New System.Drawing.Point(35, 362)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(193, 25)
+        Me.Label2.Size = New System.Drawing.Size(234, 23)
         Me.Label2.TabIndex = 8
         Me.Label2.Text = "Clave de Usuario"
         '
         'TXT_CLAVE
         '
+        Me.TXT_CLAVE.BackColor = System.Drawing.Color.Transparent
         Me.TXT_CLAVE.BorderRadius = 20
         Me.TXT_CLAVE.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.TXT_CLAVE.DefaultText = ""
@@ -106,7 +109,7 @@ Partial Class Form1
         Me.TXT_CLAVE.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
         Me.TXT_CLAVE.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
         Me.TXT_CLAVE.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.TXT_CLAVE.Font = New System.Drawing.Font("Segoe UI", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TXT_CLAVE.Font = New System.Drawing.Font("OCR A Extended", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TXT_CLAVE.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.TXT_CLAVE.Location = New System.Drawing.Point(40, 405)
         Me.TXT_CLAVE.Margin = New System.Windows.Forms.Padding(5, 6, 5, 6)
@@ -122,15 +125,17 @@ Partial Class Form1
         '
         Me.Label4.AutoSize = True
         Me.Label4.BackColor = System.Drawing.Color.Transparent
-        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.Font = New System.Drawing.Font("OCR A Extended", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.ForeColor = System.Drawing.SystemColors.ButtonFace
         Me.Label4.Location = New System.Drawing.Point(35, 248)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(204, 25)
+        Me.Label4.Size = New System.Drawing.Size(248, 23)
         Me.Label4.TabIndex = 10
         Me.Label4.Text = "Correo de Usuario"
         '
         'TXT_CORREO
         '
+        Me.TXT_CORREO.BackColor = System.Drawing.Color.Transparent
         Me.TXT_CORREO.BorderRadius = 20
         Me.TXT_CORREO.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.TXT_CORREO.DefaultText = ""
@@ -139,7 +144,7 @@ Partial Class Form1
         Me.TXT_CORREO.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
         Me.TXT_CORREO.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
         Me.TXT_CORREO.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.TXT_CORREO.Font = New System.Drawing.Font("Segoe UI", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TXT_CORREO.Font = New System.Drawing.Font("OCR A Extended", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TXT_CORREO.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.TXT_CORREO.Location = New System.Drawing.Point(40, 291)
         Me.TXT_CORREO.Margin = New System.Windows.Forms.Padding(5, 6, 5, 6)
@@ -152,7 +157,8 @@ Partial Class Form1
         '
         'PROFILE_PICTURE
         '
-        Me.PROFILE_PICTURE.Image = Global.OLYMFLOW_2025.My.Resources.Resources.Cardboard_Man__1_
+        Me.PROFILE_PICTURE.BackColor = System.Drawing.Color.Transparent
+        Me.PROFILE_PICTURE.Image = Global.OLYMFLOW_2025.My.Resources.Resources.CATBOX
         Me.PROFILE_PICTURE.ImageRotate = 0!
         Me.PROFILE_PICTURE.Location = New System.Drawing.Point(428, 110)
         Me.PROFILE_PICTURE.Name = "PROFILE_PICTURE"
@@ -170,39 +176,49 @@ Partial Class Form1
         '
         'BT_GUARDAR
         '
+        Me.BT_GUARDAR.BackColor = System.Drawing.Color.Transparent
         Me.BT_GUARDAR.BorderRadius = 15
         Me.BT_GUARDAR.DisabledState.BorderColor = System.Drawing.Color.DarkGray
         Me.BT_GUARDAR.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
         Me.BT_GUARDAR.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
         Me.BT_GUARDAR.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
-        Me.BT_GUARDAR.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.BT_GUARDAR.FillColor = System.Drawing.Color.Transparent
+        Me.BT_GUARDAR.Font = New System.Drawing.Font("OCR A Extended", 26.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BT_GUARDAR.ForeColor = System.Drawing.Color.White
         Me.BT_GUARDAR.Image = CType(resources.GetObject("BT_GUARDAR.Image"), System.Drawing.Image)
+        Me.BT_GUARDAR.ImageSize = New System.Drawing.Size(50, 50)
         Me.BT_GUARDAR.Location = New System.Drawing.Point(40, 519)
         Me.BT_GUARDAR.Name = "BT_GUARDAR"
+        Me.BT_GUARDAR.PressedColor = System.Drawing.Color.Goldenrod
         Me.BT_GUARDAR.Size = New System.Drawing.Size(299, 64)
         Me.BT_GUARDAR.TabIndex = 13
         Me.BT_GUARDAR.Text = "Guardar"
         '
         'BT_SALIR
         '
+        Me.BT_SALIR.BackColor = System.Drawing.Color.Transparent
         Me.BT_SALIR.BorderRadius = 15
         Me.BT_SALIR.DisabledState.BorderColor = System.Drawing.Color.DarkGray
         Me.BT_SALIR.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
         Me.BT_SALIR.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
         Me.BT_SALIR.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
-        Me.BT_SALIR.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.BT_SALIR.FillColor = System.Drawing.Color.Transparent
+        Me.BT_SALIR.Font = New System.Drawing.Font("OCR A Extended", 26.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BT_SALIR.ForeColor = System.Drawing.Color.White
         Me.BT_SALIR.Image = CType(resources.GetObject("BT_SALIR.Image"), System.Drawing.Image)
+        Me.BT_SALIR.ImageSize = New System.Drawing.Size(50, 50)
         Me.BT_SALIR.Location = New System.Drawing.Point(549, 519)
         Me.BT_SALIR.Name = "BT_SALIR"
+        Me.BT_SALIR.PressedColor = System.Drawing.Color.Goldenrod
         Me.BT_SALIR.Size = New System.Drawing.Size(275, 64)
         Me.BT_SALIR.TabIndex = 14
         Me.BT_SALIR.Text = "Salir"
         '
         'Label5
         '
-        Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.BackColor = System.Drawing.Color.Transparent
+        Me.Label5.Font = New System.Drawing.Font("OCR A Extended", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.ForeColor = System.Drawing.SystemColors.ButtonFace
         Me.Label5.Location = New System.Drawing.Point(353, 385)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(177, 23)
@@ -217,7 +233,7 @@ Partial Class Form1
         Me.ROLES.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.ROLES.FocusedColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.ROLES.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.ROLES.Font = New System.Drawing.Font("Segoe UI", 10.0!)
+        Me.ROLES.Font = New System.Drawing.Font("OCR A Extended", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ROLES.ForeColor = System.Drawing.Color.FromArgb(CType(CType(68, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(112, Byte), Integer))
         Me.ROLES.ItemHeight = 30
         Me.ROLES.Items.AddRange(New Object() {"ALAJUELA", "HEREDIA", "CARTAGO", "SAN JOSE", "GUANACASTE", "PUNTARENAS", "LIMON"})
@@ -231,6 +247,8 @@ Partial Class Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
+        Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(914, 632)
         Me.Controls.Add(Me.ROLES)
         Me.Controls.Add(Me.Label5)
@@ -244,7 +262,9 @@ Partial Class Form1
         Me.Controls.Add(Me.TXT_NOMBRE)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.Label3)
+        Me.DoubleBuffered = True
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "Form1"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Form1"

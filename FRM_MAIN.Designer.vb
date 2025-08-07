@@ -55,13 +55,13 @@ Partial Class FRM_MAIN
         'IniciarSesiónToolStripMenuItem
         '
         Me.IniciarSesiónToolStripMenuItem.Name = "IniciarSesiónToolStripMenuItem"
-        Me.IniciarSesiónToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.IniciarSesiónToolStripMenuItem.Size = New System.Drawing.Size(145, 22)
         Me.IniciarSesiónToolStripMenuItem.Text = "Iniciar Sesión"
         '
         'CrearUsuarioToolStripMenuItem
         '
         Me.CrearUsuarioToolStripMenuItem.Name = "CrearUsuarioToolStripMenuItem"
-        Me.CrearUsuarioToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.CrearUsuarioToolStripMenuItem.Size = New System.Drawing.Size(145, 22)
         Me.CrearUsuarioToolStripMenuItem.Text = "Crear Usuario"
         '
         'ExitToolStripMenuItem
@@ -87,12 +87,15 @@ Partial Class FRM_MAIN
         Me.ClientSize = New System.Drawing.Size(1430, 617)
         Me.Controls.Add(Me.ToolStrip)
         Me.Controls.Add(Me.MenuStrip)
-        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
+        Me.DoubleBuffered = True
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.IsMdiContainer = True
         Me.MainMenuStrip = Me.MenuStrip
+        Me.MaximizeBox = False
         Me.Name = "FRM_MAIN"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "FRM_MAIN"
+        Me.Text = "OLYMFLOW"
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         Me.MenuStrip.ResumeLayout(False)
         Me.MenuStrip.PerformLayout()

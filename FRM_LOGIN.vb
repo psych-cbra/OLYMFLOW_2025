@@ -7,7 +7,12 @@
     End Sub
 
     Private Sub GBT_CERRAR_Click(sender As Object, e As EventArgs) Handles GBT_CERRAR.Click
-        Me.Close()
+        Try
+            Me.Close()
+        Catch ex As Exception
+            MsgBox("Error técnico:" & vbCrLf & ex.Message, vbOKOnly, "Error del Programa")
+        End Try
+
     End Sub
 
     Private Sub GBT_INI_SESION_Click(sender As Object, e As EventArgs) Handles GBT_INI_SESION.Click
