@@ -155,10 +155,10 @@ Partial Class FRM_LOGIN
         Me.FOTO.BackColor = System.Drawing.Color.Transparent
         Me.FOTO.Image = Global.OLYMFLOW_2025.My.Resources.Resources.CATBOX
         Me.FOTO.ImageRotate = 0!
-        Me.FOTO.Location = New System.Drawing.Point(406, 110)
+        Me.FOTO.Location = New System.Drawing.Point(280, 110)
         Me.FOTO.Name = "FOTO"
         Me.FOTO.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle
-        Me.FOTO.Size = New System.Drawing.Size(244, 181)
+        Me.FOTO.Size = New System.Drawing.Size(466, 181)
         Me.FOTO.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.FOTO.TabIndex = 18
         Me.FOTO.TabStop = False

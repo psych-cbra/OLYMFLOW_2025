@@ -37,10 +37,12 @@
             If USER_SESION = True Then
                 TXT_NOMBRE.Text = USER_NAME
                 TXT_CORREO.Text = USER_CORREO
-                PROFILE_PICTURE.Image = Image.FromFile(USER_FOTO)
+                If USER_FOTO <> "" Then
+                    PROFILE_PICTURE.Image = Image.FromFile(USER_FOTO)
+                End If
                 NUEVO_USER = True
-            Else
-                NUEVO_USER = False
+                Else
+                    NUEVO_USER = False
             End If
             If Application.OpenForms().OfType(Of FRM_LOGIN)().Any() Then
                 Me.Close()

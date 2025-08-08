@@ -3,9 +3,13 @@
         Me.MdiParent = FRM_MAIN
         If USER_FOTO <> "" Then
             FOTO.Image = Image.FromFile(USER_FOTO)
-            BT_LOG_OUT.Enabled = True
         Else
             FOTO.Image = My.Resources.CATBOX
+        End If
+
+        If USER_NAME <> "" And USER_CORREO <> "" Then
+            BT_LOG_OUT.Enabled = True
+        Else
             BT_LOG_OUT.Enabled = False
         End If
         If Application.OpenForms().OfType(Of Form1)().Any() Then
