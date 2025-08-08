@@ -34,7 +34,14 @@
         Try
             Me.MdiParent = FRM_MAIN
             REFRESCAR_ROL()
-            NUEVO_USER = True
+            If USER_SESION = True Then
+                TXT_NOMBRE.Text = USER_NAME
+                TXT_CORREO.Text = USER_CORREO
+                PROFILE_PICTURE.Image = Image.FromFile(USER_FOTO)
+                NUEVO_USER = True
+            Else
+                NUEVO_USER = False
+            End If
             If Application.OpenForms().OfType(Of FRM_LOGIN)().Any() Then
                 Me.Close()
             End If
@@ -89,7 +96,7 @@
 
     Private Sub BT_GUARDAR_Click(sender As Object, e As EventArgs) Handles BT_GUARDAR.Click
         Try
-            If TXT_NOMBRE.Text <> "" And TXT_CORREO.Text <> "" And TXT_CLAVE.Text <> "" And USER_SESION = True Then
+            If TXT_NOMBRE.Text <> "" And TXT_CORREO.Text <> "" And TXT_CLAVE.Text <> "" Then
                 If TXT_CORREO.Text.Contains("@") And TXT_CORREO.Text.Contains(".") Then
                     Dim rol_nombre As Integer
                     If ROLES.Text = "PROFESOR" Then
