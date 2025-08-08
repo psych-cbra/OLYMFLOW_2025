@@ -89,7 +89,7 @@
 
     Private Sub BT_GUARDAR_Click(sender As Object, e As EventArgs) Handles BT_GUARDAR.Click
         Try
-            If TXT_NOMBRE.Text <> "" And TXT_CORREO.Text <> "" And TXT_CLAVE.Text <> "" Then
+            If TXT_NOMBRE.Text <> "" And TXT_CORREO.Text <> "" And TXT_CLAVE.Text <> "" And USER_SESION = True Then
                 If TXT_CORREO.Text.Contains("@") And TXT_CORREO.Text.Contains(".") Then
                     Dim rol_nombre As Integer
                     If ROLES.Text = "PROFESOR" Then
@@ -117,6 +117,8 @@
                 Else
                     MsgBox("No ha ingresado un correo válido. Favor de verificar que este sea correcto", vbOKOnly, "Correo no válido")
                 End If
+            ElseIf USER_SESION = False Then
+                MsgBox("Es necesario que inicie sesión para crear y actualizar.", vbInformation + vbOKOnly, "Sesión no iniciada")
             Else
                 MsgBox("Favor de asegurarse de rellenar todos los espacios correspondientes.", vbOKOnly, "Espacios no rellenados")
             End If

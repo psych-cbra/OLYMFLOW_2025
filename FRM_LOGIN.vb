@@ -26,6 +26,7 @@
         Try
             If TXT_CLAVE.Text <> "" And TXT_CORREO.Text <> "" And USER_SESION = False Then
                 Dim ID As Integer
+                T.Tables.Clear()
                 SQL = "SELECT NOMBRE, CLAVE, CORREO, ROL, FOTO FROM USUARIO WHERE CORREO = '" & TXT_CORREO.Text & "' AND CLAVE = '" & TXT_CLAVE.Text & "'"
                 CARGAR_TABLA(T, SQL)
                 If T.Tables(0).Rows.Count > 0 Then
