@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class FRM_LOGIN
     Inherits System.Windows.Forms.Form
 
     'Form reemplaza a Dispose para limpiar la lista de componentes.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,7 +20,7 @@ Partial Class FRM_LOGIN
     'NOTA: el Diseñador de Windows Forms necesita el siguiente procedimiento
     'Se puede modificar usando el Diseñador de Windows Forms.  
     'No lo modifique con el editor de código.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FRM_LOGIN))
         Me.Label3 = New System.Windows.Forms.Label()
@@ -30,6 +30,9 @@ Partial Class FRM_LOGIN
         Me.Label2 = New System.Windows.Forms.Label()
         Me.GBT_INI_SESION = New Guna.UI2.WinForms.Guna2Button()
         Me.GBT_CERRAR = New Guna.UI2.WinForms.Guna2Button()
+        Me.FOTO = New Guna.UI2.WinForms.Guna2CirclePictureBox()
+        Me.BT_LOG_OUT = New Guna.UI2.WinForms.Guna2Button()
+        CType(Me.FOTO, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Label3
@@ -37,9 +40,9 @@ Partial Class FRM_LOGIN
         Me.Label3.BackColor = System.Drawing.Color.Transparent
         Me.Label3.Font = New System.Drawing.Font("OCR A Extended", 21.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.ForeColor = System.Drawing.Color.White
-        Me.Label3.Location = New System.Drawing.Point(-3, 36)
+        Me.Label3.Location = New System.Drawing.Point(275, 50)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(1022, 76)
+        Me.Label3.Size = New System.Drawing.Size(471, 76)
         Me.Label3.TabIndex = 6
         Me.Label3.Text = "Inicio de Sesión"
         Me.Label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -57,7 +60,7 @@ Partial Class FRM_LOGIN
         Me.TXT_CORREO.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.TXT_CORREO.Font = New System.Drawing.Font("OCR A Extended", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TXT_CORREO.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.TXT_CORREO.Location = New System.Drawing.Point(280, 231)
+        Me.TXT_CORREO.Location = New System.Drawing.Point(280, 323)
         Me.TXT_CORREO.Margin = New System.Windows.Forms.Padding(5, 6, 5, 6)
         Me.TXT_CORREO.MaxLength = 80
         Me.TXT_CORREO.Name = "TXT_CORREO"
@@ -72,7 +75,7 @@ Partial Class FRM_LOGIN
         Me.Label4.BackColor = System.Drawing.Color.Transparent
         Me.Label4.Font = New System.Drawing.Font("OCR A Extended", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label4.ForeColor = System.Drawing.SystemColors.ButtonFace
-        Me.Label4.Location = New System.Drawing.Point(402, 202)
+        Me.Label4.Location = New System.Drawing.Point(402, 294)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(248, 23)
         Me.Label4.TabIndex = 13
@@ -91,12 +94,12 @@ Partial Class FRM_LOGIN
         Me.TXT_CLAVE.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.TXT_CLAVE.Font = New System.Drawing.Font("OCR A Extended", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TXT_CLAVE.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.TXT_CLAVE.Location = New System.Drawing.Point(280, 336)
+        Me.TXT_CLAVE.Location = New System.Drawing.Point(280, 400)
         Me.TXT_CLAVE.Margin = New System.Windows.Forms.Padding(5, 6, 5, 6)
         Me.TXT_CLAVE.MaxLength = 16
         Me.TXT_CLAVE.Name = "TXT_CLAVE"
         Me.TXT_CLAVE.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
-        Me.TXT_CLAVE.PlaceholderText = "Digite su clave"
+        Me.TXT_CLAVE.PlaceholderText = "Digite su contraseña"
         Me.TXT_CLAVE.SelectedText = ""
         Me.TXT_CLAVE.Size = New System.Drawing.Size(466, 42)
         Me.TXT_CLAVE.TabIndex = 15
@@ -107,7 +110,7 @@ Partial Class FRM_LOGIN
         Me.Label2.BackColor = System.Drawing.Color.Transparent
         Me.Label2.Font = New System.Drawing.Font("OCR A Extended", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ForeColor = System.Drawing.SystemColors.ButtonFace
-        Me.Label2.Location = New System.Drawing.Point(402, 288)
+        Me.Label2.Location = New System.Drawing.Point(402, 371)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(234, 23)
         Me.Label2.TabIndex = 14
@@ -124,9 +127,9 @@ Partial Class FRM_LOGIN
         Me.GBT_INI_SESION.FillColor = System.Drawing.Color.Transparent
         Me.GBT_INI_SESION.Font = New System.Drawing.Font("OCR A Extended", 26.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GBT_INI_SESION.ForeColor = System.Drawing.Color.White
-        Me.GBT_INI_SESION.Location = New System.Drawing.Point(248, 476)
+        Me.GBT_INI_SESION.Location = New System.Drawing.Point(280, 476)
         Me.GBT_INI_SESION.Name = "GBT_INI_SESION"
-        Me.GBT_INI_SESION.Size = New System.Drawing.Size(235, 54)
+        Me.GBT_INI_SESION.Size = New System.Drawing.Size(223, 54)
         Me.GBT_INI_SESION.TabIndex = 16
         Me.GBT_INI_SESION.Text = "Iniciar Sesión"
         '
@@ -141,11 +144,43 @@ Partial Class FRM_LOGIN
         Me.GBT_CERRAR.FillColor = System.Drawing.Color.Transparent
         Me.GBT_CERRAR.Font = New System.Drawing.Font("OCR A Extended", 26.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GBT_CERRAR.ForeColor = System.Drawing.Color.White
-        Me.GBT_CERRAR.Location = New System.Drawing.Point(511, 462)
+        Me.GBT_CERRAR.Location = New System.Drawing.Point(573, 462)
         Me.GBT_CERRAR.Name = "GBT_CERRAR"
-        Me.GBT_CERRAR.Size = New System.Drawing.Size(235, 68)
+        Me.GBT_CERRAR.Size = New System.Drawing.Size(173, 68)
         Me.GBT_CERRAR.TabIndex = 17
         Me.GBT_CERRAR.Text = "Cerrar"
+        '
+        'FOTO
+        '
+        Me.FOTO.BackColor = System.Drawing.Color.Transparent
+        Me.FOTO.Image = Global.OLYMFLOW_2025.My.Resources.Resources.CATBOX
+        Me.FOTO.ImageRotate = 0!
+        Me.FOTO.Location = New System.Drawing.Point(406, 110)
+        Me.FOTO.Name = "FOTO"
+        Me.FOTO.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle
+        Me.FOTO.Size = New System.Drawing.Size(244, 181)
+        Me.FOTO.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.FOTO.TabIndex = 18
+        Me.FOTO.TabStop = False
+        '
+        'BT_LOG_OUT
+        '
+        Me.BT_LOG_OUT.BackColor = System.Drawing.Color.Transparent
+        Me.BT_LOG_OUT.BorderRadius = 15
+        Me.BT_LOG_OUT.DisabledState.BorderColor = System.Drawing.Color.DarkGray
+        Me.BT_LOG_OUT.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
+        Me.BT_LOG_OUT.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.BT_LOG_OUT.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
+        Me.BT_LOG_OUT.FillColor = System.Drawing.Color.Transparent
+        Me.BT_LOG_OUT.Font = New System.Drawing.Font("OCR A Extended", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BT_LOG_OUT.ForeColor = System.Drawing.Color.White
+        Me.BT_LOG_OUT.Image = CType(resources.GetObject("BT_LOG_OUT.Image"), System.Drawing.Image)
+        Me.BT_LOG_OUT.ImageSize = New System.Drawing.Size(30, 30)
+        Me.BT_LOG_OUT.Location = New System.Drawing.Point(743, 536)
+        Me.BT_LOG_OUT.Name = "BT_LOG_OUT"
+        Me.BT_LOG_OUT.Size = New System.Drawing.Size(239, 48)
+        Me.BT_LOG_OUT.TabIndex = 19
+        Me.BT_LOG_OUT.Text = "Cerrar Sesión"
         '
         'FRM_LOGIN
         '
@@ -154,6 +189,8 @@ Partial Class FRM_LOGIN
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(1020, 610)
+        Me.Controls.Add(Me.BT_LOG_OUT)
+        Me.Controls.Add(Me.FOTO)
         Me.Controls.Add(Me.GBT_CERRAR)
         Me.Controls.Add(Me.GBT_INI_SESION)
         Me.Controls.Add(Me.TXT_CLAVE)
@@ -167,6 +204,7 @@ Partial Class FRM_LOGIN
         Me.Name = "FRM_LOGIN"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "FRM_LOGIN"
+        CType(Me.FOTO, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -179,4 +217,6 @@ Partial Class FRM_LOGIN
     Friend WithEvents Label2 As Label
     Friend WithEvents GBT_INI_SESION As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents GBT_CERRAR As Guna.UI2.WinForms.Guna2Button
+    Friend WithEvents FOTO As Guna.UI2.WinForms.Guna2CirclePictureBox
+    Friend WithEvents BT_LOG_OUT As Guna.UI2.WinForms.Guna2Button
 End Class
