@@ -90,6 +90,12 @@
       <DependentUpon>Form1.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="FRM_CREAR_SALA.Designer.vb">
+      <DependentUpon>FRM_CREAR_SALA.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_CREAR_SALA.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="FRM_ESTUDIANTE_MENU.Designer.vb">
       <DependentUpon>FRM_ESTUDIANTE_MENU.vb</DependentUpon>
     </Compile>
@@ -160,17 +166,29 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FRM_CREAR_SALA.resx">
+      <DependentUpon>FRM_CREAR_SALA.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_ESTUDIANTE_MENU.resx">
+      <DependentUpon>FRM_ESTUDIANTE_MENU.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FRM_IDENTIFICACION_USUARIOS.resx">
       <DependentUpon>FRM_IDENTIFICACION_USUARIOS.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FRM_INICIO_VERIFICAR_ROL.resx">
       <DependentUpon>FRM_INICIO_VERIFICAR_ROL.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FRM_INVITADO_MENU.resx">
+      <DependentUpon>FRM_INVITADO_MENU.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FRM_LOGIN.resx">
       <DependentUpon>FRM_LOGIN.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FRM_MAIN.resx">
       <DependentUpon>FRM_MAIN.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_PROFESOR_MENU.resx">
+      <DependentUpon>FRM_PROFESOR_MENU.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FRM_QUESTION.resx">
       <DependentUpon>FRM_QUESTION.vb</DependentUpon>

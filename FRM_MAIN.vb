@@ -83,6 +83,8 @@ Public Class FRM_MAIN
     Private Sub IniciarSesiónToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles IniciarSesiónToolStripMenuItem.Click
         If Not Application.OpenForms().OfType(Of FRM_LOGIN)().Any() Then
             FRM_LOGIN.Show()
+        Else
+            MsgBox("No puede abrir esta ventana más de una vez", vbInformation + vbOKOnly, "Ventana previamente abierta")
         End If
     End Sub
 
@@ -91,10 +93,10 @@ Public Class FRM_MAIN
     End Sub
 
     Private Sub CrearUsuarioToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles CrearUsuarioToolStripMenuItem.Click
-        If Not Application.OpenForms().OfType(Of FRM_LOGIN)().Any() Then
+        If Not Application.OpenForms().OfType(Of Form1)().Any() Then
             Form1.Show()
         Else
-            MsgBox("No puede abrir esta ventana más de una vez", vbOKOnly, "Ventana abierta")
+            MsgBox("No puede abrir esta ventana más de una vez", vbInformation + vbOKOnly, "Ventana previamente abierta")
         End If
     End Sub
 End Class

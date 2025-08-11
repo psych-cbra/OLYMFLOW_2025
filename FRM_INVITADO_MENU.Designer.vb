@@ -22,9 +22,53 @@ Partial Class FRM_INVITADO_MENU
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        components = New System.ComponentModel.Container
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FRM_INVITADO_MENU))
+        Me.NOMBRE_USUARIO = New System.Windows.Forms.Label()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.SuspendLayout()
+        '
+        'NOMBRE_USUARIO
+        '
+        Me.NOMBRE_USUARIO.BackColor = System.Drawing.Color.Transparent
+        Me.NOMBRE_USUARIO.Font = New System.Drawing.Font("OCR A Extended", 21.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.NOMBRE_USUARIO.ForeColor = System.Drawing.Color.Gold
+        Me.NOMBRE_USUARIO.Location = New System.Drawing.Point(320, 103)
+        Me.NOMBRE_USUARIO.Name = "NOMBRE_USUARIO"
+        Me.NOMBRE_USUARIO.Size = New System.Drawing.Size(471, 76)
+        Me.NOMBRE_USUARIO.TabIndex = 10
+        Me.NOMBRE_USUARIO.Text = "USUARIO"
+        Me.NOMBRE_USUARIO.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'Label3
+        '
+        Me.Label3.BackColor = System.Drawing.Color.Transparent
+        Me.Label3.Font = New System.Drawing.Font("OCR A Extended", 21.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.ForeColor = System.Drawing.Color.White
+        Me.Label3.Location = New System.Drawing.Point(320, 46)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(471, 76)
+        Me.Label3.TabIndex = 9
+        Me.Label3.Text = "Bienvenido"
+        Me.Label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'FRM_INVITADO_MENU
+        '
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
+        Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.ClientSize = New System.Drawing.Size(1130, 628)
+        Me.Controls.Add(Me.NOMBRE_USUARIO)
+        Me.Controls.Add(Me.Label3)
+        Me.DoubleBuffered = True
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
+        Me.Name = "FRM_INVITADO_MENU"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "FRM_INVITADO_MENU"
+        Me.ResumeLayout(False)
+
     End Sub
+
+    Friend WithEvents NOMBRE_USUARIO As Label
+    Friend WithEvents Label3 As Label
 End Class

@@ -158,6 +158,7 @@ Partial Class Form1
         'PROFILE_PICTURE
         '
         Me.PROFILE_PICTURE.BackColor = System.Drawing.Color.Transparent
+        Me.PROFILE_PICTURE.FillColor = System.Drawing.Color.Transparent
         Me.PROFILE_PICTURE.Image = Global.OLYMFLOW_2025.My.Resources.Resources.CATBOX
         Me.PROFILE_PICTURE.ImageRotate = 0!
         Me.PROFILE_PICTURE.Location = New System.Drawing.Point(428, 110)

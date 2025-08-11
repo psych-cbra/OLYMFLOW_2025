@@ -7,4 +7,5 @@
     Public USER_SESION As Boolean
     Friend USER_NAME As String
     Friend USER_FOTO As String
+    Public SALA_NOMBRE As String
 End Module

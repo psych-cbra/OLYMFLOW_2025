@@ -45,6 +45,16 @@
                     NUEVO_USER = False
             End If
             If Application.OpenForms().OfType(Of FRM_LOGIN)().Any() Then
+                MsgBox("No puede abrir más de un menú a la vez.", vbInformation + vbOKOnly, "Más de un menú abierto")
+                Me.Close()
+            ElseIf Application.OpenForms().OfType(Of FRM_ESTUDIANTE_MENU)().Any() Then
+                MsgBox("No puede abrir más de un menú a la vez.", vbInformation + vbOKOnly, "Más de un menú abierto")
+                Me.Close()
+            ElseIf Application.OpenForms().OfType(Of FRM_INVITADO_MENU)().Any() Then
+                MsgBox("No puede abrir más de un menú a la vez.", vbInformation + vbOKOnly, "Más de un menú abierto")
+                Me.Close()
+            ElseIf Application.OpenForms().OfType(Of FRM_PROFESOR_MENU)().Any() Then
+                MsgBox("No puede abrir más de un menú a la vez.", vbInformation + vbOKOnly, "Más de un menú abierto")
                 Me.Close()
             End If
         Catch ex As Exception
@@ -114,14 +124,17 @@
                         End If
 
                     End If
+                    Dim FOTOFU As String = PROFILE_PICTURE.Tag
                     If NUEVO_USER = True Then
-                        SQL = "INSERT INTO USUARIO (ID, NOMBRE, CLAVE, CORREO, ROL, FOTO) VALUES(" & PK("USUARIO", "ID") & ", '" & TXT_NOMBRE.Text & "', '" & TXT_CLAVE.Text & "','" & TXT_CORREO.Text & "','" & rol_nombre & "', '" & PROFILE_PICTURE.Tag & "')"
+
+                        SQL = "INSERT INTO USUARIO (ID, NOMBRE, CLAVE, CORREO, ROL, FOTO) VALUES(" & PK("USUARIO", "ID") & ", '" & TXT_NOMBRE.Text & "', '" & TXT_CLAVE.Text & "', '" & TXT_CORREO.Text & "', '" & rol_nombre & "', '" & FOTOFU & "')"
                     Else
-                        SQL = "UPDATE USUARIO SET NOMBRE = '" & TXT_NOMBRE.Text & "', CLAVE = '" & TXT_CLAVE.Text & "', CORREO = '" & TXT_CORREO.Text & "', ROL = '" & rol_nombre & "', FOTO = '" & PROFILE_PICTURE.Tag & ""
+                        SQL = "UPDATE USUARIO SET NOMBRE = '" & TXT_NOMBRE.Text & "', CLAVE = '" & TXT_CLAVE.Text & "', CORREO = '" & TXT_CORREO.Text & "', ROL = '" & rol_nombre & "', FOTO = '" & FOTOFU & ""
                     End If
 
                     EJECUTAR(SQL)
                     REINICIAR()
+                    Debug.Print(PROFILE_PICTURE.Tag)
                     MsgBox("La información ha sido almacenada satisfactoriamente.", vbInformation + vbOKOnly, "Transacción exitosa")
                 Else
                     MsgBox("No ha ingresado un correo válido. Favor de verificar que este sea correcto", vbOKOnly, "Correo no válido")
@@ -146,6 +159,7 @@
                 PROFILE_PICTURE.Tag = ""
                 PROFILE_PICTURE.Image = My.Resources.CATBOX
             End If
+            Debug.Print(PROFILE_PICTURE.Tag)
         Catch ex As Exception
             MsgBox("Error técnico:" & vbCrLf & ex.Message, vbOKOnly, "Error del Programa")
         End Try

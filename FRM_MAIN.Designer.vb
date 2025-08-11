@@ -55,13 +55,13 @@ Partial Class FRM_MAIN
         'IniciarSesiónToolStripMenuItem
         '
         Me.IniciarSesiónToolStripMenuItem.Name = "IniciarSesiónToolStripMenuItem"
-        Me.IniciarSesiónToolStripMenuItem.Size = New System.Drawing.Size(145, 22)
+        Me.IniciarSesiónToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.IniciarSesiónToolStripMenuItem.Text = "Iniciar Sesión"
         '
         'CrearUsuarioToolStripMenuItem
         '
         Me.CrearUsuarioToolStripMenuItem.Name = "CrearUsuarioToolStripMenuItem"
-        Me.CrearUsuarioToolStripMenuItem.Size = New System.Drawing.Size(145, 22)
+        Me.CrearUsuarioToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.CrearUsuarioToolStripMenuItem.Text = "Crear Usuario"
         '
         'ExitToolStripMenuItem
@@ -82,6 +82,7 @@ Partial Class FRM_MAIN
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.Color.SlateBlue
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(1430, 617)

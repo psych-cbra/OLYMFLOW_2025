@@ -1,20 +1,34 @@
 ﻿Public Class FRM_LOGIN
     Private Sub FRM_LOGIN_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        Me.MdiParent = FRM_MAIN
-        If USER_FOTO <> "" Then
-            FOTO.Image = Image.FromFile(USER_FOTO)
-        Else
-            FOTO.Image = My.Resources.CATBOX
-        End If
+        Try
+            Me.MdiParent = FRM_MAIN
+            If USER_FOTO <> "" Then
+                FOTO.Image = Image.FromFile(USER_FOTO)
+            Else
+                FOTO.Image = My.Resources.CATBOX
+            End If
 
-        If USER_NAME <> "" And USER_CORREO <> "" Then
-            BT_LOG_OUT.Enabled = True
-        Else
-            BT_LOG_OUT.Enabled = False
-        End If
-        If Application.OpenForms().OfType(Of Form1)().Any() Then
-            Me.Close()
-        End If
+            If USER_NAME <> "" And USER_CORREO <> "" Then
+                BT_LOG_OUT.Enabled = True
+            Else
+                BT_LOG_OUT.Enabled = False
+            End If
+            If Application.OpenForms().OfType(Of Form1)().Any() Then
+                MsgBox("No puede abrir más de un menú a la vez.", vbInformation + vbOKOnly, "Más de un menú abierto")
+                Me.Close()
+            ElseIf Application.OpenForms().OfType(Of FRM_ESTUDIANTE_MENU)().Any() Then
+                MsgBox("No puede abrir más de un menú a la vez.", vbInformation + vbOKOnly, "Más de un menú abierto")
+                Me.Close()
+            ElseIf Application.OpenForms().OfType(Of FRM_INVITADO_MENU)().Any() Then
+                MsgBox("No puede abrir más de un menú a la vez.", vbInformation + vbOKOnly, "Más de un menú abierto")
+                Me.Close()
+            ElseIf Application.OpenForms().OfType(Of FRM_PROFESOR_MENU)().Any() Then
+                MsgBox("No puede abrir más de un menú a la vez.", vbInformation + vbOKOnly, "Más de un menú abierto")
+                Me.Close()
+            End If
+        Catch ex As Exception
+            MsgBox("Error técnico:" & vbCrLf & ex.Message, vbOKOnly, "Error del Programa")
+        End Try
     End Sub
 
     Private Sub GBT_CERRAR_Click(sender As Object, e As EventArgs) Handles GBT_CERRAR.Click

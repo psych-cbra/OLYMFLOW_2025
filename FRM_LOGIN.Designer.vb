@@ -153,6 +153,7 @@ Partial Class FRM_LOGIN
         'FOTO
         '
         Me.FOTO.BackColor = System.Drawing.Color.Transparent
+        Me.FOTO.FillColor = System.Drawing.Color.Transparent
         Me.FOTO.Image = Global.OLYMFLOW_2025.My.Resources.Resources.CATBOX
         Me.FOTO.ImageRotate = 0!
         Me.FOTO.Location = New System.Drawing.Point(280, 110)
