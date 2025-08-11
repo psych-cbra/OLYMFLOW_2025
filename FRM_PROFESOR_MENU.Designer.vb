@@ -27,6 +27,7 @@ Partial Class FRM_PROFESOR_MENU
         Me.NOMBRE_USUARIO = New System.Windows.Forms.Label()
         Me.FOTO = New Guna.UI2.WinForms.Guna2CirclePictureBox()
         Me.BT_BORRAR_CUENTA = New Guna.UI2.WinForms.Guna2Button()
+        Me.BT_MODIFICAR_USUARIO = New Guna.UI2.WinForms.Guna2Button()
         CType(Me.FOTO, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -87,6 +88,26 @@ Partial Class FRM_PROFESOR_MENU
         Me.BT_BORRAR_CUENTA.TabIndex = 15
         Me.BT_BORRAR_CUENTA.Text = "Borrar cuenta"
         '
+        'BT_MODIFICAR_USUARIO
+        '
+        Me.BT_MODIFICAR_USUARIO.BackColor = System.Drawing.Color.Transparent
+        Me.BT_MODIFICAR_USUARIO.BorderRadius = 15
+        Me.BT_MODIFICAR_USUARIO.DisabledState.BorderColor = System.Drawing.Color.DarkGray
+        Me.BT_MODIFICAR_USUARIO.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
+        Me.BT_MODIFICAR_USUARIO.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.BT_MODIFICAR_USUARIO.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
+        Me.BT_MODIFICAR_USUARIO.FillColor = System.Drawing.Color.Transparent
+        Me.BT_MODIFICAR_USUARIO.Font = New System.Drawing.Font("OCR A Extended", 26.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BT_MODIFICAR_USUARIO.ForeColor = System.Drawing.Color.White
+        Me.BT_MODIFICAR_USUARIO.Image = CType(resources.GetObject("BT_MODIFICAR_USUARIO.Image"), System.Drawing.Image)
+        Me.BT_MODIFICAR_USUARIO.ImageSize = New System.Drawing.Size(50, 50)
+        Me.BT_MODIFICAR_USUARIO.Location = New System.Drawing.Point(37, 520)
+        Me.BT_MODIFICAR_USUARIO.Name = "BT_MODIFICAR_USUARIO"
+        Me.BT_MODIFICAR_USUARIO.PressedColor = System.Drawing.Color.Goldenrod
+        Me.BT_MODIFICAR_USUARIO.Size = New System.Drawing.Size(457, 64)
+        Me.BT_MODIFICAR_USUARIO.TabIndex = 16
+        Me.BT_MODIFICAR_USUARIO.Text = "Modificar Usuario"
+        '
         'FRM_PROFESOR_MENU
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -94,6 +115,7 @@ Partial Class FRM_PROFESOR_MENU
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(1119, 608)
+        Me.Controls.Add(Me.BT_MODIFICAR_USUARIO)
         Me.Controls.Add(Me.BT_BORRAR_CUENTA)
         Me.Controls.Add(Me.FOTO)
         Me.Controls.Add(Me.NOMBRE_USUARIO)
@@ -112,4 +134,5 @@ Partial Class FRM_PROFESOR_MENU
     Friend WithEvents NOMBRE_USUARIO As Label
     Friend WithEvents FOTO As Guna.UI2.WinForms.Guna2CirclePictureBox
     Friend WithEvents BT_BORRAR_CUENTA As Guna.UI2.WinForms.Guna2Button
+    Friend WithEvents BT_MODIFICAR_USUARIO As Guna.UI2.WinForms.Guna2Button
 End Class

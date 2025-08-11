@@ -127,9 +127,17 @@
                     Dim FOTOFU As String = PROFILE_PICTURE.Tag
                     If NUEVO_USER = True Then
 
-                        SQL = "INSERT INTO USUARIO (ID, NOMBRE, CLAVE, CORREO, ROL, FOTO) VALUES(" & PK("USUARIO", "ID") & ", '" & TXT_NOMBRE.Text & "', '" & TXT_CLAVE.Text & "', '" & TXT_CORREO.Text & "', '" & rol_nombre & "', '" & FOTOFU & "')"
+                        SQL = "INSERT INTO USUARIO (ID, NOMBRE, CLAVE, CORREO, ROL, FOTO) VALUES(" & PK("USUARIO", "ID") & ", '" & TXT_NOMBRE.Text & "', '" & TXT_CLAVE.Text & "', '" & TXT_CORREO.Text & "', '" & rol_nombre & "', '" & PROFILE_PICTURE.Tag & "')"
                     Else
-                        SQL = "UPDATE USUARIO SET NOMBRE = '" & TXT_NOMBRE.Text & "', CLAVE = '" & TXT_CLAVE.Text & "', CORREO = '" & TXT_CORREO.Text & "', ROL = '" & rol_nombre & "', FOTO = '" & FOTOFU & ""
+                        T.Tables.Clear()
+                        Dim SQL2 As String = "SELECT ID FROM USUARIO WHERE CORREO = '" & TXT_CORREO.Text & "' AND CLAVE = '" & TXT_CLAVE.Text & "'"
+                        CARGAR_TABLA(T, SQL2)
+                        If T.Tables(0).Rows.Count > 0 Then
+                            USER_ID = T.Tables(0).Rows(0).ItemArray(0) ' id del usuario :3
+                            T.Tables.Clear()
+                            SQL = "UPDATE USUARIO SET NOMBRE = '" & TXT_NOMBRE.Text & "', CLAVE = '" & TXT_CLAVE.Text & "', CORREO = '" & TXT_CORREO.Text & "', ROL = '" & rol_nombre & "', FOTO = '" & PROFILE_PICTURE.Tag & "' WHERE ID = " & USER_ID & ""
+                        End If
+                        'SQL = "UPDATE USUARIO SET NOMBRE = '" & TXT_NOMBRE.Text & "', CLAVE = '" & TXT_CLAVE.Text & "', CORREO = '" & TXT_CORREO.Text & "', ROL = '" & rol_nombre & "', FOTO = '" & PROFILE_PICTURE.Tag & "' WHERE ID = " & IDA_OBJ & ""
                     End If
 
                     EJECUTAR(SQL)

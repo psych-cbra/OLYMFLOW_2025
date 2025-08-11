@@ -8,4 +8,5 @@
     Friend USER_NAME As String
     Friend USER_FOTO As String
     Public SALA_NOMBRE As String
+    Friend USER_ID As Integer
 End Module
