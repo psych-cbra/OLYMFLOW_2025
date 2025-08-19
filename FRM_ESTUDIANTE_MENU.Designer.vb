@@ -37,6 +37,7 @@ Partial Class FRM_ESTUDIANTE_MENU
         Me.Label4 = New System.Windows.Forms.Label()
         Me.TXT_NOMBRE = New Guna.UI2.WinForms.Guna2TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
+        Me.GBT_ENCUESTA = New Guna.UI2.WinForms.Guna2Button()
         CType(Me.FOTO, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -269,6 +270,23 @@ Partial Class FRM_ESTUDIANTE_MENU
         Me.Label1.TabIndex = 29
         Me.Label1.Text = "Nombre de Usuario"
         '
+        'GBT_ENCUESTA
+        '
+        Me.GBT_ENCUESTA.BackColor = System.Drawing.Color.Transparent
+        Me.GBT_ENCUESTA.BorderRadius = 15
+        Me.GBT_ENCUESTA.DisabledState.BorderColor = System.Drawing.Color.DarkGray
+        Me.GBT_ENCUESTA.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
+        Me.GBT_ENCUESTA.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.GBT_ENCUESTA.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
+        Me.GBT_ENCUESTA.FillColor = System.Drawing.Color.Transparent
+        Me.GBT_ENCUESTA.Font = New System.Drawing.Font("OCR A Extended", 26.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.GBT_ENCUESTA.ForeColor = System.Drawing.Color.White
+        Me.GBT_ENCUESTA.Location = New System.Drawing.Point(384, 202)
+        Me.GBT_ENCUESTA.Name = "GBT_ENCUESTA"
+        Me.GBT_ENCUESTA.Size = New System.Drawing.Size(318, 95)
+        Me.GBT_ENCUESTA.TabIndex = 37
+        Me.GBT_ENCUESTA.Text = "Unirse a Encuesta"
+        '
         'FRM_ESTUDIANTE_MENU
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -276,6 +294,7 @@ Partial Class FRM_ESTUDIANTE_MENU
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(1089, 636)
+        Me.Controls.Add(Me.GBT_ENCUESTA)
         Me.Controls.Add(Me.ROLES)
         Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.TXT_CLAVE)
@@ -315,4 +334,5 @@ Partial Class FRM_ESTUDIANTE_MENU
     Friend WithEvents Label4 As Label
     Friend WithEvents TXT_NOMBRE As Guna.UI2.WinForms.Guna2TextBox
     Friend WithEvents Label1 As Label
+    Friend WithEvents GBT_ENCUESTA As Guna.UI2.WinForms.Guna2Button
 End Class

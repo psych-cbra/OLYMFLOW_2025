@@ -67,4 +67,80 @@
             MsgBox("Error técnico:" & vbCrLf & ex.Message, vbOKOnly, "Error del Programa")
         End Try
     End Sub
+
+    Private Sub BT_MODIFICAR_USUARIO_Click(sender As Object, e As EventArgs) Handles BT_MODIFICAR_USUARIO.Click
+        Try
+            If TXT_CORREO.Text.Contains("@") And TXT_CORREO.Text.Contains(".") Then
+                Dim rol_nombre As Integer
+                If ROLES.Text = "PROFESOR" Then
+                    rol_nombre = 1
+                ElseIf ROLES.Text = "ESTUDIANTE" Then
+                    rol_nombre = 2
+                ElseIf ROLES.Text = "INVITADO" Then
+                    rol_nombre = 3
+                ElseIf ROLES.Text = "TEST" Then
+                    rol_nombre = 616
+                    If MsgBox("You should delete this column NOW!!!!!!", vbCritical + vbOKOnly, "THE SUN SMILES AT YOU WITH ETERNAL MALICE Ü") = vbOK Then
+                        End
+                    End If
+
+                End If
+                Dim FOTOFU As String = FOTO.Tag
+                SQL = "UPDATE USUARIO SET NOMBRE = '" & TXT_NOMBRE.Text & "', CLAVE = '" & TXT_CLAVE.Text & "', CORREO = '" & TXT_CORREO.Text & "', ROL = '" & rol_nombre & "', FOTO = '" & FOTO.Tag & "' WHERE ID = " & USER_ID & ""
+                'SQL = "UPDATE USUARIO SET NOMBRE = '" & TXT_NOMBRE.Text & "', CLAVE = '" & TXT_CLAVE.Text & "', CORREO = '" & TXT_CORREO.Text & "', ROL = '" & rol_nombre & "', FOTO = '" & PROFILE_PICTURE.Tag & "' WHERE ID = " & IDA_OBJ & ""
+
+                EJECUTAR(SQL)
+                REINICIAR()
+                'Debug.Print(PROFILE_PICTURE.Tag)
+                MsgBox("La información ha sido almacenada satisfactoriamente.", vbInformation + vbOKOnly, "Transacción exitosa")
+            Else
+                MsgBox("No ha ingresado un correo válido. Favor de verificar que este sea correcto", vbOKOnly, "Correo no válido")
+            End If
+        Catch ex As Exception
+            MsgBox("Error técnico:" & vbCrLf & ex.Message, vbOKOnly, "Error del Programa")
+        End Try
+    End Sub
+
+    Private Sub TXT_NOMBRE_TextChanged(sender As Object, e As EventArgs) Handles TXT_NOMBRE.TextChanged
+        Try
+            ACTIVAR()
+        Catch ex As Exception
+            MsgBox("Error técnico:" & vbCrLf & ex.Message, vbOKOnly, "Error del Programa")
+        End Try
+    End Sub
+
+    Private Sub TXT_CORREO_TextChanged(sender As Object, e As EventArgs) Handles TXT_CORREO.TextChanged
+        Try
+            If TXT_CORREO.Text <> "" Then
+                'If TXT_CORREO.Text.Contains("@") And TXT_CORREO.Text.Contains(".") Then
+                ACTIVAR()
+            End If
+            'Else
+            'MsgBox("No ha ingresado un correo válido. Favor de verificar que este sea correcto", vbOKOnly, "Correo no válido")
+            'End If
+            'End If
+        Catch ex As Exception
+            MsgBox("Error técnico:" & vbCrLf & ex.Message, vbOKOnly, "Error del Programa")
+        End Try
+    End Sub
+
+    Private Sub TXT_CLAVE_TextChanged(sender As Object, e As EventArgs) Handles TXT_CLAVE.TextChanged
+        Try
+            ACTIVAR()
+        Catch ex As Exception
+            MsgBox("Error técnico:" & vbCrLf & ex.Message, vbOKOnly, "Error del Programa")
+        End Try
+    End Sub
+
+    Private Sub ROLES_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ROLES.SelectedIndexChanged
+        Try
+            ACTIVAR()
+        Catch ex As Exception
+            MsgBox("Error técnico:" & vbCrLf & ex.Message, vbOKOnly, "Error del Programa")
+        End Try
+    End Sub
+
+    Private Sub FOTO_Click(sender As Object, e As EventArgs) Handles FOTO.Click
+
+    End Sub
 End Class

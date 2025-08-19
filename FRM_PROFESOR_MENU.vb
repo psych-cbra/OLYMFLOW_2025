@@ -148,7 +148,7 @@
                 EJECUTAR(SQL)
                 REINICIAR()
                 'Debug.Print(PROFILE_PICTURE.Tag)
-                MsgBox("La información ha sido almacenada satisfactoriamente.", vbInformation + vbOKOnly, "Transacción exitosa")
+                MsgBox("La información ha sido actualizada satisfactoriamente.", vbInformation + vbOKOnly, "Actualización exitosa")
             Else
                 MsgBox("No ha ingresado un correo válido. Favor de verificar que este sea correcto", vbOKOnly, "Correo no válido")
             End If
