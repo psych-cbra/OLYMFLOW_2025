@@ -108,49 +108,33 @@
 
     Private Sub BT_GUARDAR_Click(sender As Object, e As EventArgs) Handles BT_GUARDAR.Click
         Try
-            If TXT_NOMBRE.Text <> "" And TXT_CORREO.Text <> "" And TXT_CLAVE.Text <> "" Then
-                If TXT_CORREO.Text.Contains("@") And TXT_CORREO.Text.Contains(".") Then
-                    Dim rol_nombre As Integer
-                    If ROLES.Text = "PROFESOR" Then
-                        rol_nombre = 1
-                    ElseIf ROLES.Text = "ESTUDIANTE" Then
-                        rol_nombre = 2
-                    ElseIf ROLES.Text = "INVITADO" Then
-                        rol_nombre = 3
-                    ElseIf ROLES.Text = "TEST" Then
-                        rol_nombre = 616
-                        If MsgBox("You should delete this column NOW!!!!!!", vbCritical + vbOKOnly, "THE SUN SMILES AT YOU WITH ETERNAL MALICE Ü") = vbOK Then
-                            End
-                        End If
-
-                    End If
-                    Dim FOTOFU As String = PROFILE_PICTURE.Tag
-                    If NUEVO_USER = True Then
-
-                        SQL = "INSERT INTO USUARIO (ID, NOMBRE, CLAVE, CORREO, ROL, FOTO) VALUES(" & PK("USUARIO", "ID") & ", '" & TXT_NOMBRE.Text & "', '" & TXT_CLAVE.Text & "', '" & TXT_CORREO.Text & "', '" & rol_nombre & "', '" & PROFILE_PICTURE.Tag & "')"
-                    Else
-                        T.Tables.Clear()
-                        Dim SQL2 As String = "SELECT ID FROM USUARIO WHERE CORREO = '" & TXT_CORREO.Text & "' AND CLAVE = '" & TXT_CLAVE.Text & "'"
-                        CARGAR_TABLA(T, SQL2)
-                        If T.Tables(0).Rows.Count > 0 Then
-                            USER_ID = T.Tables(0).Rows(0).ItemArray(0) ' id del usuario :3
-                            T.Tables.Clear()
-                            SQL = "UPDATE USUARIO SET NOMBRE = '" & TXT_NOMBRE.Text & "', CLAVE = '" & TXT_CLAVE.Text & "', CORREO = '" & TXT_CORREO.Text & "', ROL = '" & rol_nombre & "', FOTO = '" & PROFILE_PICTURE.Tag & "' WHERE ID = " & USER_ID & ""
-                        End If
-                        'SQL = "UPDATE USUARIO SET NOMBRE = '" & TXT_NOMBRE.Text & "', CLAVE = '" & TXT_CLAVE.Text & "', CORREO = '" & TXT_CORREO.Text & "', ROL = '" & rol_nombre & "', FOTO = '" & PROFILE_PICTURE.Tag & "' WHERE ID = " & IDA_OBJ & ""
+            If TXT_CORREO.Text.Contains("@") And TXT_CORREO.Text.Contains(".") Then
+                Dim rol_nombre As Integer
+                If ROLES.Text = "PROFESOR" Then
+                    rol_nombre = 1
+                ElseIf ROLES.Text = "ESTUDIANTE" Then
+                    rol_nombre = 2
+                ElseIf ROLES.Text = "INVITADO" Then
+                    rol_nombre = 3
+                ElseIf ROLES.Text = "TEST" Then
+                    rol_nombre = 616
+                    If MsgBox("You should delete this column NOW!!!!!!", vbCritical + vbOKOnly, "THE SUN SMILES AT YOU WITH ETERNAL MALICE Ü") = vbOK Then
+                        End
                     End If
 
-                    EJECUTAR(SQL)
-                    REINICIAR()
-                    Debug.Print(PROFILE_PICTURE.Tag)
-                    MsgBox("La información ha sido almacenada satisfactoriamente.", vbInformation + vbOKOnly, "Transacción exitosa")
-                Else
-                    MsgBox("No ha ingresado un correo válido. Favor de verificar que este sea correcto", vbOKOnly, "Correo no válido")
                 End If
-            ElseIf USER_SESION = False Then
-                MsgBox("Es necesario que inicie sesión para crear y actualizar.", vbInformation + vbOKOnly, "Sesión no iniciada")
+                Dim FOTOFU As String = PROFILE_PICTURE.Tag
+                'If NUEVO_USER = True Then
+
+                SQL = "INSERT INTO USUARIO (ID, NOMBRE, CLAVE, CORREO, ROL, FOTO) VALUES(" & PK("USUARIO", "ID") & ", '" & TXT_NOMBRE.Text & "', '" & TXT_CLAVE.Text & "', '" & TXT_CORREO.Text & "', '" & rol_nombre & "', '" & PROFILE_PICTURE.Tag & "')"
+                'End If
+
+                EJECUTAR(SQL)
+                REINICIAR()
+                'Debug.Print(PROFILE_PICTURE.Tag)
+                MsgBox("La información ha sido almacenada satisfactoriamente.", vbInformation + vbOKOnly, "Transacción exitosa")
             Else
-                MsgBox("Favor de asegurarse de rellenar todos los espacios correspondientes.", vbOKOnly, "Espacios no rellenados")
+                MsgBox("No ha ingresado un correo válido. Favor de verificar que este sea correcto", vbOKOnly, "Correo no válido")
             End If
         Catch ex As Exception
             MsgBox("Error técnico:" & vbCrLf & ex.Message, vbOKOnly, "Error del Programa")

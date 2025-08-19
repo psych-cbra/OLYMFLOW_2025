@@ -45,16 +45,17 @@
             If TXT_CLAVE.Text <> "" And TXT_CORREO.Text <> "" And USER_SESION = False Then
                 Dim ID As Integer
                 T.Tables.Clear()
-                SQL = "SELECT NOMBRE, CLAVE, CORREO, ROL, FOTO FROM USUARIO WHERE CORREO = '" & TXT_CORREO.Text & "' AND CLAVE = '" & TXT_CLAVE.Text & "'"
+                SQL = "SELECT ID, NOMBRE, CLAVE, CORREO, ROL, FOTO FROM USUARIO WHERE CORREO = '" & TXT_CORREO.Text & "' AND CLAVE = '" & TXT_CLAVE.Text & "'"
                 CARGAR_TABLA(T, SQL)
                 If T.Tables(0).Rows.Count > 0 Then
-                    If TXT_CORREO.Text = T.Tables(0).Rows(0).ItemArray(2) And TXT_CLAVE.Text = T.Tables(0).Rows(0).ItemArray(1) Then
-                        USER_ROLE = T.Tables(0).Rows(0).ItemArray(3) ' rol del usuario
-                        USER_NAME = T.Tables(0).Rows(0).ItemArray(0) ' nombre del usuario
-                        USER_CORREO = T.Tables(0).Rows(0).ItemArray(2) ' correo del usuario :3
-                        If T.Tables(0).Rows(0).ItemArray(4) <> "" Then
-                            FOTO.Image = Image.FromFile(T.Tables(0).Rows(0).ItemArray(4)) ' foto del usuario
-                            USER_FOTO = T.Tables(0).Rows(0).ItemArray(4)
+                    If TXT_CORREO.Text = T.Tables(0).Rows(0).ItemArray(3) And TXT_CLAVE.Text = T.Tables(0).Rows(0).ItemArray(2) Then
+                        USER_ID = T.Tables(0).Rows(0).ItemArray(0) ' id del usuario
+                        USER_ROLE = T.Tables(0).Rows(0).ItemArray(4) ' rol del usuario
+                        USER_NAME = T.Tables(0).Rows(0).ItemArray(1) ' nombre del usuario
+                        USER_CORREO = T.Tables(0).Rows(0).ItemArray(3) ' correo del usuario :3
+                        If T.Tables(0).Rows(0).ItemArray(5) <> "" Then
+                            FOTO.Image = Image.FromFile(T.Tables(0).Rows(0).ItemArray(5)) ' foto del usuario
+                            USER_FOTO = T.Tables(0).Rows(0).ItemArray(5)
                         End If
                         'FOTO.Image = Image.FromFile(T.Tables(0).Rows(0).ItemArray(4)) ' foto del usuario
                         'USER_FOTO = T.Tables(0).Rows(0).ItemArray(4)
@@ -63,17 +64,17 @@
                         BT_LOG_OUT.Enabled = True
                         MsgBox("Se inició la sesión exitosamente.", vbInformation + vbOKOnly, "Sesión Iniciada")
                         If USER_ROLE = 1 Then
-                                FRM_PROFESOR_MENU.Show()
-                                Me.Close()
-                            ElseIf USER_ROLE = 2 Then
-                                FRM_ESTUDIANTE_MENU.Show()
-                                Me.Close()
-                            ElseIf USER_ROLE = 3 Then
-                                FRM_INVITADO_MENU.Show()
-                                Me.Close()
-                            End If
-                        Else
-                            MsgBox("El correo y/o la contraseña ingresados son incorrectos. Favor de ingresar el correo y contraseña correspondiente a su cuenta.", vbExclamation + vbOKOnly, "Valores incorrectos")
+                            FRM_PROFESOR_MENU.Show()
+                            Me.Close()
+                        ElseIf USER_ROLE = 2 Then
+                            FRM_ESTUDIANTE_MENU.Show()
+                            Me.Close()
+                        ElseIf USER_ROLE = 3 Then
+                            FRM_INVITADO_MENU.Show()
+                            Me.Close()
+                        End If
+                    Else
+                        MsgBox("El correo y/o la contraseña ingresados son incorrectos. Favor de ingresar el correo y contraseña correspondiente a su cuenta.", vbExclamation + vbOKOnly, "Valores incorrectos")
                     End If
                 Else
                     MsgBox("No se encontró ninguna cuenta con ese correo y/o contraseña.", vbExclamation + vbOKOnly, "Datos no encontrados")
