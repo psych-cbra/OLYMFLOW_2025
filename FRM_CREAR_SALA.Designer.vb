@@ -34,6 +34,9 @@ Partial Class FRM_CREAR_SALA
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.TXT_RESPUESTA_D = New Guna.UI2.WinForms.Guna2TextBox()
+        Me.Label6 = New System.Windows.Forms.Label()
+        Me.RESPUESTAS = New Guna.UI2.WinForms.Guna2ComboBox()
+        Me.BT_SUBIR_PREGUNTA = New Guna.UI2.WinForms.Guna2Button()
         CType(Me.NUD_USERS_ALLOWED, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -220,6 +223,56 @@ Partial Class FRM_CREAR_SALA
         Me.TXT_RESPUESTA_D.Size = New System.Drawing.Size(299, 90)
         Me.TXT_RESPUESTA_D.TabIndex = 37
         '
+        'Label6
+        '
+        Me.Label6.BackColor = System.Drawing.Color.Transparent
+        Me.Label6.Font = New System.Drawing.Font("OCR A Extended", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label6.ForeColor = System.Drawing.SystemColors.ButtonFace
+        Me.Label6.Location = New System.Drawing.Point(113, 406)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(177, 43)
+        Me.Label6.TabIndex = 38
+        Me.Label6.Text = "Respuesta Correcta"
+        Me.Label6.TextAlign = System.Drawing.ContentAlignment.TopCenter
+        '
+        'RESPUESTAS
+        '
+        Me.RESPUESTAS.BackColor = System.Drawing.Color.Transparent
+        Me.RESPUESTAS.BorderRadius = 20
+        Me.RESPUESTAS.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed
+        Me.RESPUESTAS.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.RESPUESTAS.FocusedColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.RESPUESTAS.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.RESPUESTAS.Font = New System.Drawing.Font("OCR A Extended", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.RESPUESTAS.ForeColor = System.Drawing.Color.FromArgb(CType(CType(68, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(112, Byte), Integer))
+        Me.RESPUESTAS.ItemHeight = 30
+        Me.RESPUESTAS.Items.AddRange(New Object() {"ALAJUELA", "HEREDIA", "CARTAGO", "SAN JOSE", "GUANACASTE", "PUNTARENAS", "LIMON"})
+        Me.RESPUESTAS.Location = New System.Drawing.Point(155, 451)
+        Me.RESPUESTAS.Margin = New System.Windows.Forms.Padding(2)
+        Me.RESPUESTAS.Name = "RESPUESTAS"
+        Me.RESPUESTAS.Size = New System.Drawing.Size(96, 36)
+        Me.RESPUESTAS.TabIndex = 39
+        '
+        'BT_SUBIR_PREGUNTA
+        '
+        Me.BT_SUBIR_PREGUNTA.BackColor = System.Drawing.Color.Transparent
+        Me.BT_SUBIR_PREGUNTA.BorderRadius = 15
+        Me.BT_SUBIR_PREGUNTA.DisabledState.BorderColor = System.Drawing.Color.DarkGray
+        Me.BT_SUBIR_PREGUNTA.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
+        Me.BT_SUBIR_PREGUNTA.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.BT_SUBIR_PREGUNTA.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
+        Me.BT_SUBIR_PREGUNTA.FillColor = System.Drawing.Color.Transparent
+        Me.BT_SUBIR_PREGUNTA.Font = New System.Drawing.Font("OCR A Extended", 26.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BT_SUBIR_PREGUNTA.ForeColor = System.Drawing.Color.White
+        Me.BT_SUBIR_PREGUNTA.Image = CType(resources.GetObject("BT_SUBIR_PREGUNTA.Image"), System.Drawing.Image)
+        Me.BT_SUBIR_PREGUNTA.ImageSize = New System.Drawing.Size(50, 50)
+        Me.BT_SUBIR_PREGUNTA.Location = New System.Drawing.Point(299, 529)
+        Me.BT_SUBIR_PREGUNTA.Name = "BT_SUBIR_PREGUNTA"
+        Me.BT_SUBIR_PREGUNTA.PressedColor = System.Drawing.Color.Goldenrod
+        Me.BT_SUBIR_PREGUNTA.Size = New System.Drawing.Size(457, 64)
+        Me.BT_SUBIR_PREGUNTA.TabIndex = 40
+        Me.BT_SUBIR_PREGUNTA.Text = "Subir Pregunta"
+        '
         'FRM_CREAR_SALA
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -227,6 +280,9 @@ Partial Class FRM_CREAR_SALA
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(1074, 633)
+        Me.Controls.Add(Me.BT_SUBIR_PREGUNTA)
+        Me.Controls.Add(Me.RESPUESTAS)
+        Me.Controls.Add(Me.Label6)
         Me.Controls.Add(Me.TXT_RESPUESTA_D)
         Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.Label4)
@@ -260,4 +316,7 @@ Partial Class FRM_CREAR_SALA
     Friend WithEvents Label4 As Label
     Friend WithEvents Label5 As Label
     Friend WithEvents TXT_RESPUESTA_D As Guna.UI2.WinForms.Guna2TextBox
+    Friend WithEvents Label6 As Label
+    Friend WithEvents RESPUESTAS As Guna.UI2.WinForms.Guna2ComboBox
+    Friend WithEvents BT_SUBIR_PREGUNTA As Guna.UI2.WinForms.Guna2Button
 End Class
