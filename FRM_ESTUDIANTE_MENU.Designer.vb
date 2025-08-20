@@ -285,7 +285,7 @@ Partial Class FRM_ESTUDIANTE_MENU
         Me.GBT_ENCUESTA.Name = "GBT_ENCUESTA"
         Me.GBT_ENCUESTA.Size = New System.Drawing.Size(318, 95)
         Me.GBT_ENCUESTA.TabIndex = 37
-        Me.GBT_ENCUESTA.Text = "Unirse a Encuesta"
+        Me.GBT_ENCUESTA.Text = "Jugar Encuesta"
         '
         'FRM_ESTUDIANTE_MENU
         '

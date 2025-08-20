@@ -156,4 +156,9 @@
             MsgBox("Error técnico:" & vbCrLf & ex.Message, vbOKOnly, "Error del Programa")
         End Try
     End Sub
+
+    Private Sub GBT_ENCUESTA_Click(sender As Object, e As EventArgs) Handles GBT_ENCUESTA.Click
+        FRM_CREAR_SALA.Show()
+        Me.Close()
+    End Sub
 End Class
