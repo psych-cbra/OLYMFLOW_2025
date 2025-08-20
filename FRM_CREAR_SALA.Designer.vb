@@ -37,6 +37,8 @@ Partial Class FRM_CREAR_SALA
         Me.Label6 = New System.Windows.Forms.Label()
         Me.RESPUESTAS = New Guna.UI2.WinForms.Guna2ComboBox()
         Me.BT_SUBIR_PREGUNTA = New Guna.UI2.WinForms.Guna2Button()
+        Me.TEMAS = New Guna.UI2.WinForms.Guna2ComboBox()
+        Me.Label7 = New System.Windows.Forms.Label()
         CType(Me.NUD_USERS_ALLOWED, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -273,6 +275,36 @@ Partial Class FRM_CREAR_SALA
         Me.BT_SUBIR_PREGUNTA.TabIndex = 40
         Me.BT_SUBIR_PREGUNTA.Text = "Subir Pregunta"
         '
+        'TEMAS
+        '
+        Me.TEMAS.BackColor = System.Drawing.Color.Transparent
+        Me.TEMAS.BorderRadius = 20
+        Me.TEMAS.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed
+        Me.TEMAS.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.TEMAS.FocusedColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.TEMAS.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.TEMAS.Font = New System.Drawing.Font("OCR A Extended", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TEMAS.ForeColor = System.Drawing.Color.FromArgb(CType(CType(68, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(112, Byte), Integer))
+        Me.TEMAS.ItemHeight = 30
+        Me.TEMAS.Items.AddRange(New Object() {"ALAJUELA", "HEREDIA", "CARTAGO", "SAN JOSE", "GUANACASTE", "PUNTARENAS", "LIMON"})
+        Me.TEMAS.Location = New System.Drawing.Point(781, 451)
+        Me.TEMAS.Margin = New System.Windows.Forms.Padding(2)
+        Me.TEMAS.Name = "TEMAS"
+        Me.TEMAS.Size = New System.Drawing.Size(174, 36)
+        Me.TEMAS.TabIndex = 42
+        '
+        'Label7
+        '
+        Me.Label7.BackColor = System.Drawing.Color.Transparent
+        Me.Label7.Font = New System.Drawing.Font("OCR A Extended", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label7.ForeColor = System.Drawing.SystemColors.ButtonFace
+        Me.Label7.Location = New System.Drawing.Point(781, 406)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(174, 43)
+        Me.Label7.TabIndex = 41
+        Me.Label7.Text = "Tema de la Pregunta"
+        Me.Label7.TextAlign = System.Drawing.ContentAlignment.TopCenter
+        '
         'FRM_CREAR_SALA
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -280,6 +312,8 @@ Partial Class FRM_CREAR_SALA
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(1074, 633)
+        Me.Controls.Add(Me.TEMAS)
+        Me.Controls.Add(Me.Label7)
         Me.Controls.Add(Me.BT_SUBIR_PREGUNTA)
         Me.Controls.Add(Me.RESPUESTAS)
         Me.Controls.Add(Me.Label6)
@@ -319,4 +353,6 @@ Partial Class FRM_CREAR_SALA
     Friend WithEvents Label6 As Label
     Friend WithEvents RESPUESTAS As Guna.UI2.WinForms.Guna2ComboBox
     Friend WithEvents BT_SUBIR_PREGUNTA As Guna.UI2.WinForms.Guna2Button
+    Friend WithEvents TEMAS As Guna.UI2.WinForms.Guna2ComboBox
+    Friend WithEvents Label7 As Label
 End Class
