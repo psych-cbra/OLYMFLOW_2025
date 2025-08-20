@@ -42,4 +42,52 @@
     Private Sub NUD_USERS_ALLOWED_ValueChanged(sender As Object, e As EventArgs) Handles NUD_USERS_ALLOWED.ValueChanged
         NUD_USERS_ALLOWED.Value = CInt(Math.Round(NUD_USERS_ALLOWED.Value))
     End Sub
+
+    Private Sub TXT_PREGUNTA_TextChanged(sender As Object, e As EventArgs) Handles TXT_PREGUNTA.TextChanged
+        Try
+            ACTIVAR()
+        Catch ex As Exception
+            MsgBox("Error técnico:" & vbCrLf & ex.Message, vbOKOnly, "Error del Programa")
+        End Try
+    End Sub
+
+    Private Sub TXT_RESPUESTA_A_TextChanged(sender As Object, e As EventArgs) Handles TXT_RESPUESTA_A.TextChanged
+        Try
+            ACTIVAR()
+        Catch ex As Exception
+            MsgBox("Error técnico:" & vbCrLf & ex.Message, vbOKOnly, "Error del Programa")
+        End Try
+    End Sub
+
+    Private Sub TXT_RESPUESTA_B_TextChanged(sender As Object, e As EventArgs) Handles TXT_RESPUESTA_B.TextChanged
+        Try
+            ACTIVAR()
+        Catch ex As Exception
+            MsgBox("Error técnico:" & vbCrLf & ex.Message, vbOKOnly, "Error del Programa")
+        End Try
+    End Sub
+
+    Private Sub TXT_RESPUESTA_C_TextChanged(sender As Object, e As EventArgs) Handles TXT_RESPUESTA_C.TextChanged
+        Try
+            ACTIVAR()
+        Catch ex As Exception
+            MsgBox("Error técnico:" & vbCrLf & ex.Message, vbOKOnly, "Error del Programa")
+        End Try
+    End Sub
+
+    Private Sub TXT_RESPUESTA_D_TextChanged(sender As Object, e As EventArgs) Handles TXT_RESPUESTA_D.TextChanged
+        Try
+            ACTIVAR()
+        Catch ex As Exception
+            MsgBox("Error técnico:" & vbCrLf & ex.Message, vbOKOnly, "Error del Programa")
+        End Try
+    End Sub
+
+    Private Sub RESPUESTAS_SelectedIndexChanged(sender As Object, e As EventArgs) Handles RESPUESTAS.SelectedIndexChanged
+        Try
+            ACTIVAR()
+        Catch ex As Exception
+            MsgBox("Error técnico:" & vbCrLf & ex.Message, vbOKOnly, "Error del Programa")
+        End Try
+    End Sub
 End Class
