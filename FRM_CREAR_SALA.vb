@@ -14,14 +14,14 @@
     End Sub
 
     Friend Sub REFRESCAR_TEMAS()
-        RESPUESTAS.Items.Clear()
+        TEMAS.Items.Clear()
         T.Tables.Clear()
         SQL = "SELECT NOMBRE_TEMA FROM TEMAS"
 
         CARGAR_TABLA(T, SQL)
         If T.Tables(0).Rows.Count > 0 Then
             For FILA = 0 To T.Tables(0).Rows.Count - 1
-                RESPUESTAS.Items.Add(T.Tables(0).Rows(FILA).ItemArray(0))
+                TEMAS.Items.Add(T.Tables(0).Rows(FILA).ItemArray(0))
             Next
         End If
     End Sub
