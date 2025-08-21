@@ -56,6 +56,9 @@
             ElseIf Application.OpenForms().OfType(Of FRM_PROFESOR_MENU)().Any() Then
                 MsgBox("No puede abrir más de un menú a la vez.", vbInformation + vbOKOnly, "Más de un menú abierto")
                 Me.Close()
+            ElseIf Application.OpenForms().OfType(Of FRM_CREAR_SALA)().Any() Then
+                MsgBox("No puede abrir más de un menú a la vez.", vbInformation + vbOKOnly, "Más de un menú abierto")
+                Me.Close()
             End If
         Catch ex As Exception
             MsgBox("Error técnico:" & vbCrLf & ex.Message, vbOKOnly, "Error del Programa")

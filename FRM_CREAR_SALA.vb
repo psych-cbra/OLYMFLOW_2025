@@ -133,7 +133,7 @@
             'Dim FOTOFU As String = PROFILE_PICTURE.Tag
             'If NUEVO_USER = True Then
 
-            SQL = "INSERT INTO QUESTIONS_REAL (QUEST_ID, TESTO_Q, RESPUESTA_A, RESPUESTA_B, RESPUESTA_C, RESPUESTA_D, TEMA_ID, RES_CORRECTA) VALUES(" & PK("QUESTIONS_REAL", "QUEST_ID") & ", '" & TXT_PREGUNTA.Text & "', '" & TXT_RESPUESTA_A.Text & "', '" & TXT_RESPUESTA_B.Text & "', '" & TXT_RESPUESTA_C.Text & "', '" & TXT_RESPUESTA_D.Text & "', '" & topic_ask & "', '" & res_nombre & "')"
+            SQL = "INSERT INTO QUESTIONS_REAL (ID, TESTO_Q, RESPUESTA_A, RESPUESTA_B, RESPUESTA_C, RESPUESTA_D, TEMAS_ID, RES_CORRECTA) VALUES(" & PK("QUESTIONS_REAL", "ID") & ", '" & TXT_PREGUNTA.Text & "', '" & TXT_RESPUESTA_A.Text & "', '" & TXT_RESPUESTA_B.Text & "', '" & TXT_RESPUESTA_C.Text & "', '" & TXT_RESPUESTA_D.Text & "', '" & topic_ask & "', '" & res_nombre & "')"
             'End If
             EJECUTAR(SQL)
             REINICIAR()
@@ -142,5 +142,10 @@
         Catch ex As Exception
             MsgBox("Error técnico:" & vbCrLf & ex.Message, vbOKOnly, "Error del Programa")
         End Try
+    End Sub
+
+    Private Sub GBT_BACK_Click(sender As Object, e As EventArgs) Handles GBT_BACK.Click
+        FRM_PROFESOR_MENU.Show()
+        Me.Close()
     End Sub
 End Class

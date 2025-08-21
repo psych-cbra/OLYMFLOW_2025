@@ -39,6 +39,7 @@ Partial Class FRM_CREAR_SALA
         Me.BT_SUBIR_PREGUNTA = New Guna.UI2.WinForms.Guna2Button()
         Me.TEMAS = New Guna.UI2.WinForms.Guna2ComboBox()
         Me.Label7 = New System.Windows.Forms.Label()
+        Me.GBT_BACK = New Guna.UI2.WinForms.Guna2Button()
         CType(Me.NUD_USERS_ALLOWED, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -305,6 +306,23 @@ Partial Class FRM_CREAR_SALA
         Me.Label7.Text = "Tema de la Pregunta"
         Me.Label7.TextAlign = System.Drawing.ContentAlignment.TopCenter
         '
+        'GBT_BACK
+        '
+        Me.GBT_BACK.BackColor = System.Drawing.Color.Transparent
+        Me.GBT_BACK.BorderRadius = 15
+        Me.GBT_BACK.DisabledState.BorderColor = System.Drawing.Color.DarkGray
+        Me.GBT_BACK.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
+        Me.GBT_BACK.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.GBT_BACK.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
+        Me.GBT_BACK.FillColor = System.Drawing.Color.Transparent
+        Me.GBT_BACK.Font = New System.Drawing.Font("OCR A Extended", 26.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.GBT_BACK.ForeColor = System.Drawing.Color.White
+        Me.GBT_BACK.Location = New System.Drawing.Point(53, 539)
+        Me.GBT_BACK.Name = "GBT_BACK"
+        Me.GBT_BACK.Size = New System.Drawing.Size(223, 54)
+        Me.GBT_BACK.TabIndex = 43
+        Me.GBT_BACK.Text = "Atrás"
+        '
         'FRM_CREAR_SALA
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -312,6 +330,7 @@ Partial Class FRM_CREAR_SALA
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(1074, 633)
+        Me.Controls.Add(Me.GBT_BACK)
         Me.Controls.Add(Me.TEMAS)
         Me.Controls.Add(Me.Label7)
         Me.Controls.Add(Me.BT_SUBIR_PREGUNTA)
@@ -355,4 +374,5 @@ Partial Class FRM_CREAR_SALA
     Friend WithEvents BT_SUBIR_PREGUNTA As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents TEMAS As Guna.UI2.WinForms.Guna2ComboBox
     Friend WithEvents Label7 As Label
+    Friend WithEvents GBT_BACK As Guna.UI2.WinForms.Guna2Button
 End Class
