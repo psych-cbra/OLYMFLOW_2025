@@ -143,4 +143,9 @@
     Private Sub FOTO_Click(sender As Object, e As EventArgs) Handles FOTO.Click
 
     End Sub
+
+    Private Sub GBT_ENCUESTA_Click(sender As Object, e As EventArgs) Handles GBT_ENCUESTA.Click
+        FRM_QUESTION.Show()
+        Me.Close()
+    End Sub
 End Class
