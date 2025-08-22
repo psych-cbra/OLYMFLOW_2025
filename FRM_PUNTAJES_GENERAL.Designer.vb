@@ -27,16 +27,14 @@ Partial Class FRM_PUNTAJES_GENERAL
         Me.ColumnHeader1 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.ColumnHeader2 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.ColumnHeader3 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
-        Me.ColumnHeader4 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
-        Me.ColumnHeader5 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
-        Me.ColumnHeader6 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.Label3 = New System.Windows.Forms.Label()
         Me.GBT_BACK = New Guna.UI2.WinForms.Guna2Button()
         Me.SuspendLayout()
         '
         'LISTA
         '
-        Me.LISTA.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.ColumnHeader1, Me.ColumnHeader2, Me.ColumnHeader3, Me.ColumnHeader4, Me.ColumnHeader5, Me.ColumnHeader6})
+        Me.LISTA.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.ColumnHeader1, Me.ColumnHeader2, Me.ColumnHeader3})
+        Me.LISTA.Font = New System.Drawing.Font("MADE TOMMY", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LISTA.FullRowSelect = True
         Me.LISTA.GridLines = True
         Me.LISTA.HideSelection = False
@@ -56,27 +54,13 @@ Partial Class FRM_PUNTAJES_GENERAL
         '
         'ColumnHeader2
         '
-        Me.ColumnHeader2.Text = "Código del Alumno"
+        Me.ColumnHeader2.Text = "Puntaje"
         Me.ColumnHeader2.Width = 172
         '
         'ColumnHeader3
         '
-        Me.ColumnHeader3.Text = "Nombre del Alumno"
+        Me.ColumnHeader3.Text = "Jugador"
         Me.ColumnHeader3.Width = 139
-        '
-        'ColumnHeader4
-        '
-        Me.ColumnHeader4.Text = "Nota"
-        '
-        'ColumnHeader5
-        '
-        Me.ColumnHeader5.Text = "Fecha de Ingreso"
-        Me.ColumnHeader5.Width = 176
-        '
-        'ColumnHeader6
-        '
-        Me.ColumnHeader6.Text = "Evidencia Fotográfica"
-        Me.ColumnHeader6.Width = 553
         '
         'Label3
         '
@@ -130,9 +114,6 @@ Partial Class FRM_PUNTAJES_GENERAL
     Friend WithEvents ColumnHeader1 As ColumnHeader
     Friend WithEvents ColumnHeader2 As ColumnHeader
     Friend WithEvents ColumnHeader3 As ColumnHeader
-    Friend WithEvents ColumnHeader4 As ColumnHeader
-    Friend WithEvents ColumnHeader5 As ColumnHeader
-    Friend WithEvents ColumnHeader6 As ColumnHeader
     Friend WithEvents Label3 As Label
     Friend WithEvents GBT_BACK As Guna.UI2.WinForms.Guna2Button
 End Class

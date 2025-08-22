@@ -1,8 +1,9 @@
 ﻿Public Class FRM_QUESTION
-    Dim num_pregunta As Integer = 10
+    Dim num_pregunta As Integer = 20
     Dim total_preguntas As Integer
     Dim respuesta_correcta As Integer
     Dim respuesta_tema As Integer
+    Dim puntaje_cat As Integer
     Friend Sub REINICIAR(ByVal CANTIDAD As Integer)
         Dim ID As Integer = Int((CANTIDAD * Rnd()) + 1)
         'IDA_OBJ = ID
@@ -19,10 +20,20 @@
         respuesta_correcta = T.Tables(0).Rows(0).ItemArray(6) ' respuesta correcta de la pregunta
 
         TIEMPO.Value = 20
-        If num_pregunta > 0 And num_pregunta <> 10 Then
+        If num_pregunta > 0 And num_pregunta <> 20 Then
             num_pregunta -= 1
         End If
     End Sub
+
+    Friend Sub RESULTADOS()
+        SQL = "INSERT INTO SCORES (ID, PUNTOS, JUGADOR_NOMBRE, USUARIO_ID) VALUES(" & PK("USUARIO", "ID") & ", '" & puntaje_cat & "', '" & USER_NAME & "', '" & USER_ID & "')"
+        'End If
+
+        EJECUTAR(SQL)
+        'Debug.Print(PROFILE_PICTURE.Tag)
+        MsgBox("La información ha sido almacenada satisfactoriamente.", vbInformation + vbOKOnly, "Transacción exitosa")
+    End Sub
+
     Private Sub FRM_QUESTION_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Try
             Me.MdiParent = FRM_MAIN
@@ -44,13 +55,16 @@
 
     Private Sub GBT_RESPUESTA_A_Click(sender As Object, e As EventArgs) Handles GBT_RESPUESTA_A.Click
         Try
-            If respuesta_correcta <> 1 And num_pregunta < 10 Then
+            If respuesta_correcta <> 1 And num_pregunta < 20 Then
                 num_pregunta += 1
+                puntaje_cat -= 10
                 REINICIAR(total_preguntas)
             ElseIf num_pregunta <> 0 Then
                 num_pregunta -= 1
+                puntaje_cat += 10
                 REINICIAR(total_preguntas)
             Else
+                RESULTADOS()
                 FRM_PUNTAJE_JUGADOR.Show()
                 Me.Close()
             End If
@@ -61,13 +75,16 @@
 
     Private Sub GBT_RESPUESTA_B_Click(sender As Object, e As EventArgs) Handles GBT_RESPUESTA_B.Click
         Try
-            If respuesta_correcta <> 2 And num_pregunta < 10 Then
+            If respuesta_correcta <> 2 And num_pregunta < 20 Then
                 num_pregunta += 1
+                puntaje_cat -= 10
                 REINICIAR(total_preguntas)
             ElseIf num_pregunta <> 0 Then
                 num_pregunta -= 1
+                puntaje_cat += 10
                 REINICIAR(total_preguntas)
             Else
+                RESULTADOS()
                 FRM_PUNTAJE_JUGADOR.Show()
                 Me.Close()
             End If
@@ -78,13 +95,16 @@
 
     Private Sub GBT_RESPUESTA_C_Click(sender As Object, e As EventArgs) Handles GBT_RESPUESTA_C.Click
         Try
-            If respuesta_correcta <> 3 And num_pregunta < 10 Then
+            If respuesta_correcta <> 3 And num_pregunta < 20 Then
                 num_pregunta += 1
+                puntaje_cat -= 10
                 REINICIAR(total_preguntas)
             ElseIf num_pregunta <> 0 Then
                 num_pregunta -= 1
+                puntaje_cat += 10
                 REINICIAR(total_preguntas)
             Else
+                RESULTADOS()
                 FRM_PUNTAJE_JUGADOR.Show()
                 Me.Close()
             End If
@@ -95,13 +115,16 @@
 
     Private Sub GBT_RESPUESTA_D_Click(sender As Object, e As EventArgs) Handles GBT_RESPUESTA_D.Click
         Try
-            If respuesta_correcta <> 1 And num_pregunta < 10 Then
+            If respuesta_correcta <> 1 And num_pregunta < 20 Then
                 num_pregunta += 1
+                puntaje_cat -= 10
                 REINICIAR(total_preguntas)
             ElseIf num_pregunta <> 0 Then
                 num_pregunta -= 1
+                puntaje_cat += 10
                 REINICIAR(total_preguntas)
             Else
+                RESULTADOS()
                 FRM_PUNTAJE_JUGADOR.Show()
                 Me.Close()
             End If

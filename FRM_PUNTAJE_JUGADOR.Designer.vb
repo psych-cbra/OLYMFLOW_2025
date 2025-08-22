@@ -48,6 +48,7 @@ Partial Class FRM_PUNTAJE_JUGADOR
         'LISTA
         '
         Me.LISTA.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.ColumnHeader1, Me.ColumnHeader2, Me.ColumnHeader3, Me.ColumnHeader4, Me.ColumnHeader5, Me.ColumnHeader6})
+        Me.LISTA.Font = New System.Drawing.Font("MADE TOMMY", 8.25!)
         Me.LISTA.FullRowSelect = True
         Me.LISTA.GridLines = True
         Me.LISTA.HideSelection = False
