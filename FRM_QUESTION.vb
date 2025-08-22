@@ -70,7 +70,7 @@
         Try
             If respuesta_correcta <> 1 And num_pregunta < 20 Then
                 num_pregunta += 1
-                puntaje_cat -= 10
+                puntaje_cat -= 15
                 REINICIAR(total_preguntas)
             ElseIf num_pregunta <> 0 Then
                 num_pregunta -= 1
@@ -91,7 +91,7 @@
         Try
             If respuesta_correcta <> 2 And num_pregunta < 20 Then
                 num_pregunta += 1
-                puntaje_cat -= 10
+                puntaje_cat -= 15
                 REINICIAR(total_preguntas)
             ElseIf num_pregunta <> 0 Then
                 num_pregunta -= 1
@@ -112,7 +112,7 @@
         Try
             If respuesta_correcta <> 3 And num_pregunta < 20 Then
                 num_pregunta += 1
-                puntaje_cat -= 10
+                puntaje_cat -= 15
                 ACTUALIZAR_PUNTOS()
                 REINICIAR(total_preguntas)
             ElseIf num_pregunta <> 0 Then
@@ -134,7 +134,7 @@
         Try
             If respuesta_correcta <> 1 And num_pregunta < 20 Then
                 num_pregunta += 1
-                puntaje_cat -= 10
+                puntaje_cat -= 15
                 REINICIAR(total_preguntas)
             ElseIf num_pregunta <> 0 Then
                 num_pregunta -= 1
