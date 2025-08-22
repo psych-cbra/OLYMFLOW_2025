@@ -161,4 +161,9 @@
         FRM_CREAR_SALA.Show()
         Me.Close()
     End Sub
+
+    Private Sub GBT_PUNTAJES_Click(sender As Object, e As EventArgs) Handles GBT_PUNTAJES.Click
+        FRM_PUNTAJES_GENERAL.Show()
+        Me.Close()
+    End Sub
 End Class

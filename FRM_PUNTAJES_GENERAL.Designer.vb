@@ -31,6 +31,7 @@ Partial Class FRM_PUNTAJES_GENERAL
         Me.ColumnHeader5 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.ColumnHeader6 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.Label3 = New System.Windows.Forms.Label()
+        Me.GBT_BACK = New Guna.UI2.WinForms.Guna2Button()
         Me.SuspendLayout()
         '
         'LISTA
@@ -39,7 +40,7 @@ Partial Class FRM_PUNTAJES_GENERAL
         Me.LISTA.FullRowSelect = True
         Me.LISTA.GridLines = True
         Me.LISTA.HideSelection = False
-        Me.LISTA.Location = New System.Drawing.Point(48, 362)
+        Me.LISTA.Location = New System.Drawing.Point(47, 367)
         Me.LISTA.Margin = New System.Windows.Forms.Padding(2)
         Me.LISTA.MultiSelect = False
         Me.LISTA.Name = "LISTA"
@@ -89,6 +90,23 @@ Partial Class FRM_PUNTAJES_GENERAL
         Me.Label3.Text = "Tabla de Puntajes"
         Me.Label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
+        'GBT_BACK
+        '
+        Me.GBT_BACK.BackColor = System.Drawing.Color.Transparent
+        Me.GBT_BACK.BorderRadius = 15
+        Me.GBT_BACK.DisabledState.BorderColor = System.Drawing.Color.DarkGray
+        Me.GBT_BACK.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
+        Me.GBT_BACK.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.GBT_BACK.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
+        Me.GBT_BACK.FillColor = System.Drawing.Color.Transparent
+        Me.GBT_BACK.Font = New System.Drawing.Font("OCR A Extended", 26.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.GBT_BACK.ForeColor = System.Drawing.Color.White
+        Me.GBT_BACK.Location = New System.Drawing.Point(901, 33)
+        Me.GBT_BACK.Name = "GBT_BACK"
+        Me.GBT_BACK.Size = New System.Drawing.Size(223, 54)
+        Me.GBT_BACK.TabIndex = 44
+        Me.GBT_BACK.Text = "Atrás"
+        '
         'FRM_PUNTAJES_GENERAL
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -96,6 +114,7 @@ Partial Class FRM_PUNTAJES_GENERAL
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(1166, 616)
+        Me.Controls.Add(Me.GBT_BACK)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.LISTA)
         Me.DoubleBuffered = True
@@ -115,4 +134,5 @@ Partial Class FRM_PUNTAJES_GENERAL
     Friend WithEvents ColumnHeader5 As ColumnHeader
     Friend WithEvents ColumnHeader6 As ColumnHeader
     Friend WithEvents Label3 As Label
+    Friend WithEvents GBT_BACK As Guna.UI2.WinForms.Guna2Button
 End Class
