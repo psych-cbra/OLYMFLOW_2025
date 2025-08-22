@@ -58,6 +58,7 @@
                 USER_NAME = ""
                 USER_CORREO = ""
                 USER_FOTO = ""
+                USER_ID = 0
                 FOTO.Image = My.Resources.CATBOX
                 MsgBox("Se ha cerrado la sesión exitosamente.", vbInformation + vbOKOnly, "Sesión cerrada")
                 BT_LOG_OUT.Enabled = False
@@ -86,7 +87,7 @@
 
                 End If
                 Dim FOTOFU As String = FOTO.Tag
-                SQL = "UPDATE USUARIO SET NOMBRE = '" & TXT_NOMBRE.Text & "', CLAVE = '" & TXT_CLAVE.Text & "', CORREO = '" & TXT_CORREO.Text & "', ROL = '" & rol_nombre & "', FOTO = '" & FOTO.Tag & "' WHERE ID = " & USER_ID & ""
+                SQL = "UPDATE USUARIO SET NOMBRE = '" & TXT_NOMBRE.Text & "', CLAVE = '" & TXT_CLAVE.Text & "', CORREO = '" & TXT_CORREO.Text & "', ROL = '" & rol_nombre & "', FOTO = '" & USER_FOTO & "' WHERE ID = " & USER_ID & ""
                 'SQL = "UPDATE USUARIO SET NOMBRE = '" & TXT_NOMBRE.Text & "', CLAVE = '" & TXT_CLAVE.Text & "', CORREO = '" & TXT_CORREO.Text & "', ROL = '" & rol_nombre & "', FOTO = '" & PROFILE_PICTURE.Tag & "' WHERE ID = " & IDA_OBJ & ""
 
                 EJECUTAR(SQL)

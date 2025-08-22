@@ -9,4 +9,5 @@
     Friend USER_FOTO As String
     Public SALA_NOMBRE As String
     Friend USER_ID As Integer
+    Friend USER_SCORE As Integer
 End Module

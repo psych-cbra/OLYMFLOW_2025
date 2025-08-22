@@ -4,6 +4,7 @@
     Dim respuesta_correcta As Integer
     Dim respuesta_tema As Integer
     Dim puntaje_cat As Integer
+    Dim nuevo_puntaje As Integer = 0
     Friend Sub REINICIAR(ByVal CANTIDAD As Integer)
         Dim ID As Integer = Int((CANTIDAD * Rnd()) + 1)
         'IDA_OBJ = ID
@@ -25,8 +26,20 @@
         End If
     End Sub
 
+    Friend Sub ACTUALIZAR_PUNTOS()
+        T.Tables.Clear()
+        SQL = "SELECT ID FROM SCORES WHERE USUARIO_ID = " & USER_ID & ""
+        CARGAR_TABLA(T, SQL)
+        nuevo_puntaje = T.Tables(0).Rows(0).ItemArray(0) ' verifica si el usuario ya realizó la prueba
+    End Sub
+
     Friend Sub RESULTADOS()
-        SQL = "INSERT INTO SCORES (ID, PUNTOS, JUGADOR_NOMBRE, USUARIO_ID) VALUES(" & PK("USUARIO", "ID") & ", '" & puntaje_cat & "', '" & USER_NAME & "', '" & USER_ID & "')"
+        USER_SCORE = puntaje_cat
+        If nuevo_puntaje <> 0 Then
+            SQL = "INSERT INTO SCORES (ID, PUNTOS, JUGADOR_NOMBRE, USUARIO_ID) VALUES(" & PK("SCORES", "ID") & ", '" & puntaje_cat & "', '" & USER_NAME & "', '" & USER_ID & "')"
+        Else
+            SQL = "UPDATE SCORES SET PUNTOS = '" & puntaje_cat & "', JUGADOR_NOMBRE = '" & USER_NAME & "' WHERE USUARIO_ID = " & USER_ID & ""
+        End If
         'End If
 
         EJECUTAR(SQL)
@@ -64,6 +77,7 @@
                 puntaje_cat += 10
                 REINICIAR(total_preguntas)
             Else
+                ACTUALIZAR_PUNTOS()
                 RESULTADOS()
                 FRM_PUNTAJE_JUGADOR.Show()
                 Me.Close()
@@ -84,6 +98,7 @@
                 puntaje_cat += 10
                 REINICIAR(total_preguntas)
             Else
+                ACTUALIZAR_PUNTOS()
                 RESULTADOS()
                 FRM_PUNTAJE_JUGADOR.Show()
                 Me.Close()
@@ -98,12 +113,14 @@
             If respuesta_correcta <> 3 And num_pregunta < 20 Then
                 num_pregunta += 1
                 puntaje_cat -= 10
+                ACTUALIZAR_PUNTOS()
                 REINICIAR(total_preguntas)
             ElseIf num_pregunta <> 0 Then
                 num_pregunta -= 1
                 puntaje_cat += 10
                 REINICIAR(total_preguntas)
             Else
+                ACTUALIZAR_PUNTOS()
                 RESULTADOS()
                 FRM_PUNTAJE_JUGADOR.Show()
                 Me.Close()
@@ -124,6 +141,7 @@
                 puntaje_cat += 10
                 REINICIAR(total_preguntas)
             Else
+                ACTUALIZAR_PUNTOS()
                 RESULTADOS()
                 FRM_PUNTAJE_JUGADOR.Show()
                 Me.Close()
