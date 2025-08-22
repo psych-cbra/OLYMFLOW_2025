@@ -50,6 +50,9 @@
             ElseIf num_pregunta <> 0 Then
                 num_pregunta -= 1
                 REINICIAR(total_preguntas)
+            Else
+                FRM_PUNTAJE_JUGADOR.Show()
+                Me.Close()
             End If
         Catch ex As Exception
             MsgBox("Error técnico:" & vbCrLf & ex.Message, vbOKOnly, "Error del Programa")
@@ -64,6 +67,9 @@
             ElseIf num_pregunta <> 0 Then
                 num_pregunta -= 1
                 REINICIAR(total_preguntas)
+            Else
+                FRM_PUNTAJE_JUGADOR.Show()
+                Me.Close()
             End If
         Catch ex As Exception
             MsgBox("Error técnico:" & vbCrLf & ex.Message, vbOKOnly, "Error del Programa")
@@ -78,6 +84,9 @@
             ElseIf num_pregunta <> 0 Then
                 num_pregunta -= 1
                 REINICIAR(total_preguntas)
+            Else
+                FRM_PUNTAJE_JUGADOR.Show()
+                Me.Close()
             End If
         Catch ex As Exception
             MsgBox("Error técnico:" & vbCrLf & ex.Message, vbOKOnly, "Error del Programa")
@@ -92,6 +101,9 @@
             ElseIf num_pregunta <> 0 Then
                 num_pregunta -= 1
                 REINICIAR(total_preguntas)
+            Else
+                FRM_PUNTAJE_JUGADOR.Show()
+                Me.Close()
             End If
         Catch ex As Exception
             MsgBox("Error técnico:" & vbCrLf & ex.Message, vbOKOnly, "Error del Programa")
