@@ -29,6 +29,7 @@ Partial Class FRM_PUNTAJES_GENERAL
         Me.ColumnHeader3 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.Label3 = New System.Windows.Forms.Label()
         Me.GBT_BACK = New Guna.UI2.WinForms.Guna2Button()
+        Me.TXT_BUSCAR = New Guna.UI2.WinForms.Guna2TextBox()
         Me.SuspendLayout()
         '
         'LISTA
@@ -55,12 +56,12 @@ Partial Class FRM_PUNTAJES_GENERAL
         'ColumnHeader2
         '
         Me.ColumnHeader2.Text = "Puntaje"
-        Me.ColumnHeader2.Width = 172
+        Me.ColumnHeader2.Width = 530
         '
         'ColumnHeader3
         '
         Me.ColumnHeader3.Text = "Jugador"
-        Me.ColumnHeader3.Width = 139
+        Me.ColumnHeader3.Width = 820
         '
         'Label3
         '
@@ -91,6 +92,29 @@ Partial Class FRM_PUNTAJES_GENERAL
         Me.GBT_BACK.TabIndex = 44
         Me.GBT_BACK.Text = "Atrás"
         '
+        'TXT_BUSCAR
+        '
+        Me.TXT_BUSCAR.BackColor = System.Drawing.Color.Transparent
+        Me.TXT_BUSCAR.BorderRadius = 20
+        Me.TXT_BUSCAR.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
+        Me.TXT_BUSCAR.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.TXT_BUSCAR.DefaultText = ""
+        Me.TXT_BUSCAR.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
+        Me.TXT_BUSCAR.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
+        Me.TXT_BUSCAR.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.TXT_BUSCAR.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.TXT_BUSCAR.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.TXT_BUSCAR.Font = New System.Drawing.Font("OCR A Extended", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TXT_BUSCAR.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.TXT_BUSCAR.Location = New System.Drawing.Point(254, 317)
+        Me.TXT_BUSCAR.Margin = New System.Windows.Forms.Padding(5, 6, 5, 6)
+        Me.TXT_BUSCAR.MaxLength = 100
+        Me.TXT_BUSCAR.Name = "TXT_BUSCAR"
+        Me.TXT_BUSCAR.PlaceholderText = "Inserte el nombre del jugador que desea buscar"
+        Me.TXT_BUSCAR.SelectedText = ""
+        Me.TXT_BUSCAR.Size = New System.Drawing.Size(680, 42)
+        Me.TXT_BUSCAR.TabIndex = 45
+        '
         'FRM_PUNTAJES_GENERAL
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -98,6 +122,7 @@ Partial Class FRM_PUNTAJES_GENERAL
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(1166, 616)
+        Me.Controls.Add(Me.TXT_BUSCAR)
         Me.Controls.Add(Me.GBT_BACK)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.LISTA)
@@ -116,4 +141,5 @@ Partial Class FRM_PUNTAJES_GENERAL
     Friend WithEvents ColumnHeader3 As ColumnHeader
     Friend WithEvents Label3 As Label
     Friend WithEvents GBT_BACK As Guna.UI2.WinForms.Guna2Button
+    Friend WithEvents TXT_BUSCAR As Guna.UI2.WinForms.Guna2TextBox
 End Class

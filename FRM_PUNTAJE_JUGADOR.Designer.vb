@@ -99,6 +99,7 @@ Partial Class FRM_PUNTAJE_JUGADOR
         Me.ClientSize = New System.Drawing.Size(1178, 633)
         Me.Controls.Add(Me.LISTA)
         Me.Controls.Add(Me.Label3)
+        Me.DoubleBuffered = True
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "FRM_PUNTAJE_JUGADOR"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
