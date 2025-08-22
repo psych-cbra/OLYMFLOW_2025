@@ -52,7 +52,7 @@ Partial Class FRM_QUESTION
         Me.RES_A_TEXT.BackColor = System.Drawing.Color.Transparent
         Me.RES_A_TEXT.Font = New System.Drawing.Font("OCR A Extended", 21.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.RES_A_TEXT.ForeColor = System.Drawing.Color.White
-        Me.RES_A_TEXT.Location = New System.Drawing.Point(214, 358)
+        Me.RES_A_TEXT.Location = New System.Drawing.Point(214, 362)
         Me.RES_A_TEXT.Name = "RES_A_TEXT"
         Me.RES_A_TEXT.Size = New System.Drawing.Size(1151, 80)
         Me.RES_A_TEXT.TabIndex = 7
@@ -61,31 +61,37 @@ Partial Class FRM_QUESTION
         '
         'GBT_RESPUESTA_A
         '
+        Me.GBT_RESPUESTA_A.BackgroundImage = CType(resources.GetObject("GBT_RESPUESTA_A.BackgroundImage"), System.Drawing.Image)
+        Me.GBT_RESPUESTA_A.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.GBT_RESPUESTA_A.DisabledState.BorderColor = System.Drawing.Color.DarkGray
         Me.GBT_RESPUESTA_A.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
         Me.GBT_RESPUESTA_A.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
         Me.GBT_RESPUESTA_A.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
-        Me.GBT_RESPUESTA_A.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.GBT_RESPUESTA_A.FillColor = System.Drawing.Color.Transparent
+        Me.GBT_RESPUESTA_A.Font = New System.Drawing.Font("OCR A Extended", 48.0!, System.Drawing.FontStyle.Bold)
         Me.GBT_RESPUESTA_A.ForeColor = System.Drawing.Color.White
         Me.GBT_RESPUESTA_A.Location = New System.Drawing.Point(103, 362)
         Me.GBT_RESPUESTA_A.Name = "GBT_RESPUESTA_A"
         Me.GBT_RESPUESTA_A.Size = New System.Drawing.Size(105, 76)
         Me.GBT_RESPUESTA_A.TabIndex = 8
-        Me.GBT_RESPUESTA_A.Text = "Guna2Button1"
+        Me.GBT_RESPUESTA_A.Text = "A"
         '
         'GBT_RESPUESTA_B
         '
+        Me.GBT_RESPUESTA_B.BackgroundImage = CType(resources.GetObject("GBT_RESPUESTA_B.BackgroundImage"), System.Drawing.Image)
+        Me.GBT_RESPUESTA_B.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.GBT_RESPUESTA_B.DisabledState.BorderColor = System.Drawing.Color.DarkGray
         Me.GBT_RESPUESTA_B.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
         Me.GBT_RESPUESTA_B.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
         Me.GBT_RESPUESTA_B.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
-        Me.GBT_RESPUESTA_B.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.GBT_RESPUESTA_B.FillColor = System.Drawing.Color.Transparent
+        Me.GBT_RESPUESTA_B.Font = New System.Drawing.Font("OCR A Extended", 48.0!, System.Drawing.FontStyle.Bold)
         Me.GBT_RESPUESTA_B.ForeColor = System.Drawing.Color.White
         Me.GBT_RESPUESTA_B.Location = New System.Drawing.Point(103, 477)
         Me.GBT_RESPUESTA_B.Name = "GBT_RESPUESTA_B"
         Me.GBT_RESPUESTA_B.Size = New System.Drawing.Size(105, 76)
         Me.GBT_RESPUESTA_B.TabIndex = 10
-        Me.GBT_RESPUESTA_B.Text = "Guna2Button1"
+        Me.GBT_RESPUESTA_B.Text = "B"
         '
         'RES_B_TEXT
         '
@@ -101,17 +107,20 @@ Partial Class FRM_QUESTION
         '
         'GBT_RESPUESTA_C
         '
+        Me.GBT_RESPUESTA_C.BackgroundImage = CType(resources.GetObject("GBT_RESPUESTA_C.BackgroundImage"), System.Drawing.Image)
+        Me.GBT_RESPUESTA_C.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.GBT_RESPUESTA_C.DisabledState.BorderColor = System.Drawing.Color.DarkGray
         Me.GBT_RESPUESTA_C.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
         Me.GBT_RESPUESTA_C.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
         Me.GBT_RESPUESTA_C.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
-        Me.GBT_RESPUESTA_C.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.GBT_RESPUESTA_C.FillColor = System.Drawing.Color.Transparent
+        Me.GBT_RESPUESTA_C.Font = New System.Drawing.Font("OCR A Extended", 48.0!, System.Drawing.FontStyle.Bold)
         Me.GBT_RESPUESTA_C.ForeColor = System.Drawing.Color.White
         Me.GBT_RESPUESTA_C.Location = New System.Drawing.Point(103, 585)
         Me.GBT_RESPUESTA_C.Name = "GBT_RESPUESTA_C"
         Me.GBT_RESPUESTA_C.Size = New System.Drawing.Size(105, 76)
         Me.GBT_RESPUESTA_C.TabIndex = 12
-        Me.GBT_RESPUESTA_C.Text = "Guna2Button1"
+        Me.GBT_RESPUESTA_C.Text = "C"
         '
         'RES_C_TEXT
         '
@@ -127,17 +136,20 @@ Partial Class FRM_QUESTION
         '
         'GBT_RESPUESTA_D
         '
+        Me.GBT_RESPUESTA_D.BackgroundImage = CType(resources.GetObject("GBT_RESPUESTA_D.BackgroundImage"), System.Drawing.Image)
+        Me.GBT_RESPUESTA_D.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.GBT_RESPUESTA_D.DisabledState.BorderColor = System.Drawing.Color.DarkGray
         Me.GBT_RESPUESTA_D.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
         Me.GBT_RESPUESTA_D.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
         Me.GBT_RESPUESTA_D.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
-        Me.GBT_RESPUESTA_D.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.GBT_RESPUESTA_D.FillColor = System.Drawing.Color.Transparent
+        Me.GBT_RESPUESTA_D.Font = New System.Drawing.Font("OCR A Extended", 48.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GBT_RESPUESTA_D.ForeColor = System.Drawing.Color.White
         Me.GBT_RESPUESTA_D.Location = New System.Drawing.Point(103, 691)
         Me.GBT_RESPUESTA_D.Name = "GBT_RESPUESTA_D"
         Me.GBT_RESPUESTA_D.Size = New System.Drawing.Size(105, 76)
         Me.GBT_RESPUESTA_D.TabIndex = 14
-        Me.GBT_RESPUESTA_D.Text = "Guna2Button1"
+        Me.GBT_RESPUESTA_D.Text = "D"
         '
         'RES_D_TEXT
         '
