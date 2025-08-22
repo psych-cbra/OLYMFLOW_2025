@@ -57,7 +57,6 @@ Partial Class FRM_QUESTION
         Me.RES_A_TEXT.Size = New System.Drawing.Size(1151, 80)
         Me.RES_A_TEXT.TabIndex = 7
         Me.RES_A_TEXT.Text = "Respuesta A"
-        Me.RES_A_TEXT.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'GBT_RESPUESTA_A
         '
@@ -103,7 +102,6 @@ Partial Class FRM_QUESTION
         Me.RES_B_TEXT.Size = New System.Drawing.Size(1151, 80)
         Me.RES_B_TEXT.TabIndex = 9
         Me.RES_B_TEXT.Text = "Respuesta B"
-        Me.RES_B_TEXT.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'GBT_RESPUESTA_C
         '
@@ -132,7 +130,6 @@ Partial Class FRM_QUESTION
         Me.RES_C_TEXT.Size = New System.Drawing.Size(1151, 80)
         Me.RES_C_TEXT.TabIndex = 11
         Me.RES_C_TEXT.Text = "Respuesta C"
-        Me.RES_C_TEXT.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'GBT_RESPUESTA_D
         '
@@ -161,7 +158,6 @@ Partial Class FRM_QUESTION
         Me.RES_D_TEXT.Size = New System.Drawing.Size(1151, 80)
         Me.RES_D_TEXT.TabIndex = 13
         Me.RES_D_TEXT.Text = "Respuesta D"
-        Me.RES_D_TEXT.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'TIEMPO
         '
@@ -179,6 +175,7 @@ Partial Class FRM_QUESTION
         Me.TIEMPO.TabIndex = 17
         Me.TIEMPO.Text = "Guna2ProgressBar1"
         Me.TIEMPO.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault
+        Me.TIEMPO.Value = 20
         Me.TIEMPO.Visible = False
         '
         'FRM_QUESTION
