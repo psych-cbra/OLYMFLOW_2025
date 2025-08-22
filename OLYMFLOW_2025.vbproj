@@ -138,6 +138,18 @@
     <Compile Include="FRM_PROFESOR_MENU.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="FRM_PUNTAJES_GENERAL.Designer.vb">
+      <DependentUpon>FRM_PUNTAJES_GENERAL.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_PUNTAJES_GENERAL.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_PUNTAJE_JUGADOR.Designer.vb">
+      <DependentUpon>FRM_PUNTAJE_JUGADOR.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_PUNTAJE_JUGADOR.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="FRM_QUESTION.Designer.vb">
       <DependentUpon>FRM_QUESTION.vb</DependentUpon>
     </Compile>
