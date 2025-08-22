@@ -148,4 +148,12 @@
         FRM_PROFESOR_MENU.Show()
         Me.Close()
     End Sub
+
+    Private Sub TEMAS_SelectedIndexChanged(sender As Object, e As EventArgs) Handles TEMAS.SelectedIndexChanged
+        Try
+            ACTIVAR()
+        Catch ex As Exception
+            MsgBox("Error técnico:" & vbCrLf & ex.Message, vbOKOnly, "Error del Programa")
+        End Try
+    End Sub
 End Class

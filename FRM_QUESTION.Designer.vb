@@ -167,11 +167,13 @@ Partial Class FRM_QUESTION
         '
         Me.TIEMPO.BackColor = System.Drawing.Color.Transparent
         Me.TIEMPO.BorderRadius = 10
+        Me.TIEMPO.Font = New System.Drawing.Font("MS Gothic", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TIEMPO.Location = New System.Drawing.Point(115, 32)
         Me.TIEMPO.Margin = New System.Windows.Forms.Padding(2)
         Me.TIEMPO.Maximum = 20
         Me.TIEMPO.Name = "TIEMPO"
-        Me.TIEMPO.ProgressColor2 = System.Drawing.Color.Lime
+        Me.TIEMPO.ProgressColor = System.Drawing.Color.Firebrick
+        Me.TIEMPO.ProgressColor2 = System.Drawing.Color.Crimson
         Me.TIEMPO.ShowText = True
         Me.TIEMPO.Size = New System.Drawing.Size(1250, 27)
         Me.TIEMPO.TabIndex = 17
